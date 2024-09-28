@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: iranyekan;
+}
+
+@font-face {
+    font-family: iranyekan;
+    src: url(./Fonts/Qs_Iranyekan.ttf);
+}
+
+div.swiper-button-next{
+    width: 40px;
+}
+div.swiper-button-prev{
+    width: 40px;
+}
+div.swiper-button-next::after{
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    color: #888888;
+    font-size: 12px;
+    font-weight: bolder;
+    width: 40px ;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.swiper-button-prev::after{
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    color: #888888;
+    font-size: 12px;
+    font-weight: bolder;
+    width: 40px ;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.swiper-button-disabled{
+    display: none;
+}
