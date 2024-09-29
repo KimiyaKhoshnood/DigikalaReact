@@ -1,4 +1,5 @@
 import AmazingSuggestion from "../AmazingSuggestion/AmazingSuggestion"
+import AmazingSupermarket from "../AmazingSupermarket/AmazingSupermarket"
 import Header from "../Header/Header"
 import Highlights from "../Highlights/Highlights"
 import MainSwipper from "../MainSwipper/MainSwipper"
@@ -14,6 +15,7 @@ function App() {
         <MainSwipper/>
         <Highlights/>
         <AmazingSuggestion/>
+        <AmazingSupermarket/>
       </div>
     </>
   )

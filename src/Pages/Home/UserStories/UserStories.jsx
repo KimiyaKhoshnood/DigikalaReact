@@ -30,7 +30,7 @@ const UserStories = () => {
     return ( 
         <>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center lg:px-4">
         <div className="w-full h-fit py-4 max-w-[1336px]">
         <Swiper
         slidesPerView={'auto'}

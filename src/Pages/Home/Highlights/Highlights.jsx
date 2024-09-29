@@ -15,7 +15,7 @@ const Highlights = () => {
     ]
     return ( 
         <>
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full lg:px-4">
         <div className="bg-gray-400 py-3 flex justify-between max-w-[1336px] w-full">
             {
                 HighlightItemsP.map((elem)=>{

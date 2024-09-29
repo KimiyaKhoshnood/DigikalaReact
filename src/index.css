@@ -47,3 +47,8 @@ div.swiper-button-prev::after{
 div.swiper-button-disabled{
     display: none;
 }
+
+#redSwiper:nth-child(2){
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
