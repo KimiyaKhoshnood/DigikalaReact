@@ -52,3 +52,9 @@ div.swiper-button-disabled{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+.swiper-scrollbar {
+    width: 50px !important;
+    position: relative !important;
+    right: 45% !important;
+}

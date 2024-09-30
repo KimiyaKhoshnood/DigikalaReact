@@ -35,13 +35,15 @@ const AmazingSupermarket = () => {
     <>
       <div className="flex justify-center px-4 py-3">
         <a className='bg-[#EBEEED] w-full rounded-2xl' href="">
-        <div className="max-w-[1336px] bg-[url('https://www.digikala.com/statics/img/svg/typography/freshPattern.svg')] h-[110px] w-full flex justify-between px-4 rounded-2xl bg-no-repeat">
-          <div className="flex items-center gap-2">
-            <img className="w-[66px] h-[62px]" src="https://www.digikala.com/statics/img/png/amazing/fresh.webp" alt="" />
-            <img className="w-[250px]" src="https://www.digikala.com/statics/img/svg/amazing/fresh-incredible-offer.svg" alt="" />
-            <span className="bg-[#029a49] h-fit py-1 px-3 rounded-2xl text-white text-sm">تا ۵۰٪ تخفیف</span>
+        <div className="max-w-[1336px] bg-[url('https://www.digikala.com/statics/img/svg/typography/freshPattern.svg')] bg-left h-fit w-full flex lg:flex-row flex-col justify-between px-4 py-4 rounded-2xl bg-no-repeat lg:gap-0 gap-3">
+          <div className="flex lg:flex-row flex-col lg:items-center gap-2">
+            <div className='flex gap-2'>
+              <img className="w-[66px] h-[62px]" src="https://www.digikala.com/statics/img/png/amazing/fresh.webp" alt="" />
+              <img className="w-[250px]" src="https://www.digikala.com/statics/img/svg/amazing/fresh-incredible-offer.svg" alt="" />
+            </div>
+            <span className="bg-[#029a49] w-fit h-fit py-1 px-3 rounded-2xl text-white text-sm">تا ۵۰٪ تخفیف</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-between gap-2">
             <div className='flex gap-2'>
                 {
                   ASupermarketItemsP.map((elem, i)=>{
@@ -53,7 +55,9 @@ const AmazingSupermarket = () => {
                   })
                 }
             </div>
-            <span className="py-3 px-4 bg-white flex justify-center items-center h-fit rounded-3xl text-[#029a49] text-sm gap-2">بیش از ۲۰ کالا <Icon icon={arrowLeft}/> </span>
+            <span className="py-3 px-4 bg-white lg:flex hidden justify-center items-center h-fit rounded-3xl text-[#029a49] text-sm gap-2">بیش از ۲۰ کالا <Icon icon={arrowLeft}/> </span>
+            <div className='lg:hidden flex justify-center items-center bg-white w-[44px] h-[44px] rounded-full text-[#029a49]'><Icon className='' icon={arrowLeft} size={20}/></div>
+            
           </div>
         </div>
         </a>
