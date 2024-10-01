@@ -38,10 +38,10 @@ const AmazingSupermarket = () => {
         <div className="max-w-[1336px] bg-[url('https://www.digikala.com/statics/img/svg/typography/freshPattern.svg')] bg-left h-fit w-full flex lg:flex-row flex-col justify-between px-4 py-4 rounded-2xl bg-no-repeat lg:gap-0 gap-3">
           <div className="flex lg:flex-row flex-col lg:items-center gap-2">
             <div className='flex gap-2'>
-              <img className="w-[66px] h-[62px]" src="https://www.digikala.com/statics/img/png/amazing/fresh.webp" alt="" />
-              <img className="w-[250px]" src="https://www.digikala.com/statics/img/svg/amazing/fresh-incredible-offer.svg" alt="" />
+              <img className="lg:w-[66px] w-[40px] lg:h-[62px] h-[38px]" src="https://www.digikala.com/statics/img/png/amazing/fresh.webp" alt="" />
+              <img className="lg:w-[250px] w-[190px]" src="https://www.digikala.com/statics/img/svg/amazing/fresh-incredible-offer.svg" alt="" />
             </div>
-            <span className="bg-[#029a49] w-fit h-fit py-1 px-3 rounded-2xl text-white text-sm">تا ۵۰٪ تخفیف</span>
+            <span className="bg-[#029a49] w-fit h-fit py-1 px-3 rounded-2xl text-white lg:text-sm text-xs">تا ۵۰٪ تخفیف</span>
           </div>
           <div className="flex items-center justify-between gap-2">
             <div className='flex gap-2'>

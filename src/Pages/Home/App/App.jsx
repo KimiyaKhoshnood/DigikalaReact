@@ -1,6 +1,8 @@
 import AmazingSuggestion from "../AmazingSuggestion/AmazingSuggestion"
 import AmazingSupermarket from "../AmazingSupermarket/AmazingSupermarket"
 import BannerSupermarket from "../BannerSupermarket/BannerSupermarket"
+import BuyBySorting from "../BuyBySorting/BuyBySorting"
+import FourPicsBox from "../FourPicsBox/FourPicsBox"
 import Header from "../Header/Header"
 import Highlights from "../Highlights/Highlights"
 import MainSwipper from "../MainSwipper/MainSwipper"
@@ -18,6 +20,8 @@ function App() {
         <Highlights/>
         <AmazingSuggestion/>
         <AmazingSupermarket/>
+        <FourPicsBox/>
+        <BuyBySorting/>
       </div>
     </>
   )
