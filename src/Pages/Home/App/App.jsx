@@ -6,6 +6,8 @@ import FourPicsBox from "../FourPicsBox/FourPicsBox"
 import Header from "../Header/Header"
 import Highlights from "../Highlights/Highlights"
 import MainSwipper from "../MainSwipper/MainSwipper"
+import PopularBrands from "../PopularBrands/PopularBrands"
+import TwoPicsBox from "../TwoPicsBox/TwoPicsBox"
 import UserStories from "../UserStories/UserStories"
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
         <AmazingSupermarket/>
         <FourPicsBox/>
         <BuyBySorting/>
+        <TwoPicsBox/>
+        <PopularBrands/>
+        <TwoPicsBox/>
       </div>
     </>
   )

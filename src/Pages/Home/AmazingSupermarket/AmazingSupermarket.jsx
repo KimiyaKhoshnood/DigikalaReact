@@ -34,8 +34,8 @@ const AmazingSupermarket = () => {
   return (
     <>
       <div className="flex justify-center px-4 py-3">
-        <a className='bg-[#EBEEED] w-full rounded-2xl' href="">
-        <div className="max-w-[1336px] bg-[url('https://www.digikala.com/statics/img/svg/typography/freshPattern.svg')] bg-left h-fit w-full flex lg:flex-row flex-col justify-between px-4 py-4 rounded-2xl bg-no-repeat lg:gap-0 gap-3">
+        <a className='max-w-[1336px] bg-[#EBEEED] w-full rounded-2xl' href="">
+        <div className="bg-[url('https://www.digikala.com/statics/img/svg/typography/freshPattern.svg')] bg-left h-fit w-full flex lg:flex-row flex-col justify-between px-4 py-4 rounded-2xl bg-no-repeat lg:gap-0 gap-3">
           <div className="flex lg:flex-row flex-col lg:items-center gap-2">
             <div className='flex gap-2'>
               <img className="lg:w-[66px] w-[40px] lg:h-[62px] h-[38px]" src="https://www.digikala.com/statics/img/png/amazing/fresh.webp" alt="" />

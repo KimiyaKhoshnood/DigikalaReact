@@ -16,8 +16,8 @@ const MainSwipper = () => {
     ]
   return (
     <>
-    <div>
-      <div className="xl:h-[400px] md:h-[300px] h-[268px] bg-yellow-300 w-full">
+    <div className="flex justify-center">
+      <div className="max-w-[1920px] xl:h-[400px] md:h-[300px] h-[268px] bg-yellow-300 w-full">
         <Swiper
           cssMode={true}
           navigation={true}

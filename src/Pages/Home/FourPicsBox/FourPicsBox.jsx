@@ -1,4 +1,4 @@
-import FourPicItems from "./FourPicItems";
+import FourPicItems from "./FourPicItems/FourPicItems";
 
 const FourPicsBox = () => {
     let FourPicItemsP = [
@@ -10,12 +10,14 @@ const FourPicsBox = () => {
 
     return ( 
         <>
-        <div className="gap-4 p-4 grid lg:grid-cols-4 grid-cols-2">
-            {
-                FourPicItemsP.map((elem)=>{
-                    return( <FourPicItems image={elem.image} key={elem.id}/> )
+        <div className="flex justify-center p-4">
+            <div className="max-w-[1336px] w-full gap-4 grid lg:grid-cols-4 grid-cols-2">
+                {
+                    FourPicItemsP.map((elem)=>{
+                        return( <FourPicItems image={elem.image} key={elem.id}/> )
                 })
-            }
+                }
+            </div>
         </div>
         </>
      );
