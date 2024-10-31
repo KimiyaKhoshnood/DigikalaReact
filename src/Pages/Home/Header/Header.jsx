@@ -13,6 +13,8 @@ import {x} from 'react-icons-kit/oct/x'
 import { basket } from "react-icons-kit/ikons/basket";
 import {tags} from 'react-icons-kit/ikons/tags'
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchPost } from "../../../Redux/Posts/PostReducer";
 
 const Header = () => {
   let NavbarItemsP = {
@@ -66,13 +68,21 @@ const Header = () => {
     locationNavbar: { text: "لطفا شهر خود را انتخاب کنید", color: "text-gray-800", icon: location, size: "text-xs" },
   };
 
+  const {posts, loading, error} = useSelector((state)=>state.posts)
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch(fetchPost("NavbarItemsP"))
+    },[])
+
+    console.log("NavbarItemsP", posts);
+    
+
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const updateWindowDimensions = () => {
       const newWidth = window.innerWidth;
       setWidth(newWidth);
-      console.log("updating width");
     };
 
     window.addEventListener("resize", updateWindowDimensions);
@@ -81,11 +91,8 @@ const Header = () => {
 
   }, []);
 
-  console.log("give height", width);
-
   return (
-    <div>
-      <header>
+      <header className="sticky top-0 z-20 bg-white">
         <div className="">
           <a href="" className="w-full lg:h-[60px] h-[35px] block">
             <img
@@ -152,17 +159,17 @@ const Header = () => {
           <div className="flex gap-2">
             <div className="border-b-2 border-b-transparent hover:border-b-red-500 transition-all duration-300 ease-linear origin-right">
               <NavbarItems
-                icon={NavbarItemsP.productSorting.icon}
-                text={NavbarItemsP.productSorting.text}
-                size={NavbarItemsP.productSorting.size}
-                color={NavbarItemsP.productSorting.color}
+                icon={NavbarItemsP?.productSorting.icon}
+                text={posts?.productSorting.text}
+                size={posts?.productSorting.size}
+                color={posts?.productSorting.color}
               />
             </div>
             <div className="text-gray-300 mt-2">|</div>
             <div className="flex">
-              {NavbarItemsP.digikalaPagesNavbar.map((elem, index) => {
+              {NavbarItemsP?.digikalaPagesNavbar.map((elem, index) => {
                 return ( (index < 4 || width>1280) && 
-                  <div className="border-b-2 border-b-transparent hover:border-b-red-500 transition-all duration-300 ease-linear origin-right">
+                  <div key={index} className="border-b-2 border-b-transparent hover:border-b-red-500 transition-all duration-300 ease-linear origin-right">
                     <NavbarItems
                       icon={elem.icon}
                       text={elem.text}
@@ -175,9 +182,9 @@ const Header = () => {
             </div>
             <div className="text-gray-300 mt-2">|</div>
             <div className="flex">
-              {NavbarItemsP.digikalaQuestionsNavbar.map((elem) => {
+              {posts?.digikalaQuestionsNavbar.map((elem, index) => {
                 return (
-                  <div className="border-b-2 border-b-transparent hover:border-b-red-500 transition-all duration-1000">
+                  <div key={index} className="border-b-2 border-b-transparent hover:border-b-red-500 transition-all duration-1000">
                     <NavbarItems
                       icon={elem.icon}
                       text={elem.text}
@@ -191,16 +198,15 @@ const Header = () => {
           </div>
           <div>
             <NavbarItems
-              icon={NavbarItemsP.locationNavbar.icon}
-              text={NavbarItemsP.locationNavbar.text}
-              size={NavbarItemsP.locationNavbar.size}
-              color={NavbarItemsP.locationNavbar.color}
+              icon={NavbarItemsP?.locationNavbar.icon}
+              text={posts?.locationNavbar.text}
+              size={posts?.locationNavbar.size}
+              color={posts?.locationNavbar.color}
             />
           </div>
         </nav>
         <hr />
       </header>
-    </div>
   );
 };
 

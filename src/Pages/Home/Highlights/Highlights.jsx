@@ -99,9 +99,9 @@ const Highlights = () => {
             modules={[FreeMode, Scrollbar]}
             className="mySwiper w-full"
           >
-            {HighlightItemsP.map((elem) => {
+            {HighlightItemsP.map((elem, index) => {
               return (
-                <SwiperSlide className="h-full w-fit flex justify-center">
+                <SwiperSlide key={index} className="h-full w-fit flex justify-center">
                   <HighlightItems text={elem.text} image={elem.image} key={elem.id}/>
                 </SwiperSlide>
               );

@@ -19,7 +19,6 @@ const AmazingSupermarket = () => {
     const updateWindowDimensions = () => {
       const newWidth = window.innerWidth;
       setWidth(newWidth);
-      console.log("updating width");
     };
 
     window.addEventListener("resize", updateWindowDimensions);
@@ -27,8 +26,6 @@ const AmazingSupermarket = () => {
     return () => window.removeEventListener("resize", updateWindowDimensions) 
 
   }, []);
-
-  console.log("give width", width);
 
 
   return (

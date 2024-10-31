@@ -1,0 +1,62 @@
+{
+    "NavbarItemsP" : {
+        "productSorting": { "text": "دسته‌بندی کالاها", "icon": "bars", "size": "text-md", "id": 1 },
+        "digikalaPagesNavbar": [
+          {
+            "text": "شگفت‌انگیزها",
+            "icon": "bars",
+            "color": "text-gray-500",
+            "size": "text-xs",
+            "id": 2
+          },
+          {
+            "text": "سوپرمارکت",
+            "icon": "basket",
+            "color": "text-gray-500",
+            "size": "text-xs",
+            "id": 3
+          },
+          {
+            "text": "کارت هدیه",
+            "icon": "percent",
+            "color": "text-gray-500",
+            "size": "text-xs",
+            "id": 4
+          },
+          {
+            "text": "پرفروش‌ترین‌ها",
+            "icon": "ic_local_fire_department",
+            "color": "text-gray-500",
+            "size": "text-xs",
+            "id": 5
+          },
+          {
+            "text": "تخفیف‌ها و پیشنهادها",
+            "icon": "tags",
+            "color": "text-gray-500",
+            "size": "text-xs",
+            "id": 6
+          }
+        ],
+        "digikalaQuestionsNavbar": [
+          { "text": "سوالی دارید؟", "color": "text-gray-500", "size": "text-xs", "id": 7 },
+          {
+            "text": "در دیجی‌کالا بفروشید!",
+            "color": "text-gray-500",
+            "size": "text-xs",
+            "id": 8
+          }
+        ],
+        "locationNavbar": { "text": "لطفا شهر خود را انتخاب کنید", "color": "text-gray-800", "icon": "location", "size": "text-xs" }
+      },
+    "FourPicItemsP" : [
+        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/5e124f3f520c85b07b264c293397d04a55afe2ef_1727683322.jpg?x-oss-process=image/quality,q_95/format,webp", "id":1},
+        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/56651058c7fb5c844ad73adc1ed899ecd604c57f_1727679080.jpg?x-oss-process=image/quality,q_95/format,webp", "id":2},
+        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/acbbeeae46b4a432951190982daf31b64a7bd612_1727168918.jpg?x-oss-process=image/quality,q_95/format,webp", "id":3},
+        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/f0d3ab9abc4b8700de602ca65bdf6863c87d78c6_1727518426.jpg?x-oss-process=image/quality,q_95/format,webp", "id":4}
+    ],
+    "TwoPicItemsP": [
+        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/40975c427842b45947d76c6590913d0b69a31818_1727268635.jpg?x-oss-process=image/quality,q_95/format,webp", "id":1},
+        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/f111c8fbbecc9e2d7242264451ec8d806c35c6d9_1727706944.gif?x-oss-process=image?x-oss-process=image/format,webp", "id":2}
+    ]
+}

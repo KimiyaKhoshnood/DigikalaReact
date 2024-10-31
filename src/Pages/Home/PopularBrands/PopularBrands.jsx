@@ -1,11 +1,13 @@
+import PopularBrandItems from "./PopularBrandItems/PopularBrandItems";
+
 import Icon from "react-icons-kit";
 import { star } from "react-icons-kit/feather/star";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation} from 'swiper/modules';
+import {  Navigation} from 'swiper/modules';
+import "swiper/css/free-mode";
 import 'swiper/css';
 import 'swiper/css/navigation';
-import PopularBrandItems from "./PopularBrandItems/PopularBrandItems";
 
 const PopularBrands = () => {
   let PopularBrandP = [
@@ -28,8 +30,8 @@ const PopularBrands = () => {
 
   return (
     <>
-      <div className="flex justify-center p-4">
-        <div className="max-w-[1336px] lg:py-6 w-full rounded-xl lg:border flex flex-col items-center lg:gap-6 gap-2">
+      <div className="flex justify-center lg:p-4">
+        <div className="max-w-[1336px] lg:py-6 w-full rounded-xl lg:border flex flex-col items-center lg:gap-4 gap-2">
           <h3 className="lg:text-xl text-lg text-center flex gap-2 py-1">
             <Icon className="text-yellow-400" icon={star} size={20}/>
             محبوب‌ترین برندها
