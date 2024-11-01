@@ -1,53 +1,41 @@
 {
     "NavbarItemsP" : {
-        "productSorting": { "text": "دسته‌بندی کالاها", "icon": "bars", "size": "text-md", "id": 1 },
+        "productSorting": { "text": "دسته‌بندی کالاها", "icon": "bars", "id": 1 },
         "digikalaPagesNavbar": [
           {
             "text": "شگفت‌انگیزها",
             "icon": "bars",
-            "color": "text-gray-500",
-            "size": "text-xs",
             "id": 2
           },
           {
             "text": "سوپرمارکت",
             "icon": "basket",
-            "color": "text-gray-500",
-            "size": "text-xs",
             "id": 3
           },
           {
             "text": "کارت هدیه",
             "icon": "percent",
-            "color": "text-gray-500",
-            "size": "text-xs",
             "id": 4
           },
           {
             "text": "پرفروش‌ترین‌ها",
             "icon": "ic_local_fire_department",
-            "color": "text-gray-500",
-            "size": "text-xs",
             "id": 5
           },
           {
             "text": "تخفیف‌ها و پیشنهادها",
             "icon": "tags",
-            "color": "text-gray-500",
-            "size": "text-xs",
             "id": 6
           }
         ],
         "digikalaQuestionsNavbar": [
-          { "text": "سوالی دارید؟", "color": "text-gray-500", "size": "text-xs", "id": 7 },
+          { "text": "سوالی دارید؟", "id": 7 },
           {
             "text": "در دیجی‌کالا بفروشید!",
-            "color": "text-gray-500",
-            "size": "text-xs",
             "id": 8
           }
         ],
-        "locationNavbar": { "text": "لطفا شهر خود را انتخاب کنید", "color": "text-gray-800", "icon": "location", "size": "text-xs" }
+        "locationNavbar": { "text": "لطفا شهر خود را انتخاب کنید", "icon": "location" }
       },
     "FourPicItemsP" : [
         {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/5e124f3f520c85b07b264c293397d04a55afe2ef_1727683322.jpg?x-oss-process=image/quality,q_95/format,webp", "id":1},

@@ -84,11 +84,8 @@ const Header = () => {
       const newWidth = window.innerWidth;
       setWidth(newWidth);
     };
-
     window.addEventListener("resize", updateWindowDimensions);
-
     return () => window.removeEventListener("resize", updateWindowDimensions) 
-
   }, []);
 
   return (
@@ -161,7 +158,7 @@ const Header = () => {
               <NavbarItems
                 icon={NavbarItemsP?.productSorting.icon}
                 text={posts?.productSorting.text}
-                size={posts?.productSorting.size}
+                size={"text-md"}
                 color={posts?.productSorting.color}
               />
             </div>
@@ -173,8 +170,8 @@ const Header = () => {
                     <NavbarItems
                       icon={elem.icon}
                       text={elem.text}
-                      color={elem.color}
-                      size={elem.size}
+                      color={"text-gray-500"}
+                      size={"text-xs"}
                     />
                   </div>
                 );
@@ -188,8 +185,8 @@ const Header = () => {
                     <NavbarItems
                       icon={elem.icon}
                       text={elem.text}
-                      color={elem.color}
-                      size={elem.size}
+                      color={"text-gray-500"}
+                      size={"text-xs"}
                     />
                   </div>
                 );
@@ -200,8 +197,8 @@ const Header = () => {
             <NavbarItems
               icon={NavbarItemsP?.locationNavbar.icon}
               text={posts?.locationNavbar.text}
-              size={posts?.locationNavbar.size}
-              color={posts?.locationNavbar.color}
+              size={"text-xs"}
+              color={"text-gray-800"}
             />
           </div>
         </nav>
