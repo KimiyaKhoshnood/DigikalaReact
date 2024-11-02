@@ -58,3 +58,12 @@ div.swiper-button-disabled{
     position: relative !important;
     right: 45% !important;
 }
+
+/* for read more in footer */
+#textOpacity > p {
+    background: -webkit-linear-gradient( rgba(255,255,255,1), rgba(255,255,255,0));
+	background: linear-gradient( rgb(75, 75, 75), rgba(255,255,255,0));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

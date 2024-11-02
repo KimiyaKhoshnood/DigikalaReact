@@ -1,6 +1,7 @@
 import AmazingSuggestion from "../AmazingSuggestion/AmazingSuggestion"
 import AmazingSupermarket from "../AmazingSupermarket/AmazingSupermarket"
 import BannerSupermarket from "../BannerSupermarket/BannerSupermarket"
+import Blog from "../Blog/Blog"
 import BuyBySorting from "../BuyBySorting/BuyBySorting"
 import Digiclub from "../Digiclub/Digiclub"
 import Footer from "../Footer/Footer"
@@ -30,6 +31,7 @@ function App() {
         <PopularBrands/>
         <TwoPicsBox/>
         <Digiclub/>
+        <Blog/>
         <hr />
         <Footer/>
       </div>
