@@ -46,7 +46,7 @@ const PopularBrands = () => {
             >
               {PopularBrandP.map((elem) => {
                 return (
-                  <SwiperSlide className="w-fit h-full" key={elem.id}>
+                  <SwiperSlide className="w-fit h-full border-l" key={elem.id}>
                     <PopularBrandItems image={elem.image}/>
                   </SwiperSlide>
                 );

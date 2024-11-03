@@ -246,7 +246,7 @@ const Footer = () => {
                     }
                     </div>
                 </div>
-                <BlueLinkWithLeftArrow text={readMoreBtn} functionBtn={ReadMoreBtnFunc}/>
+                <BlueLinkWithLeftArrow text={readMoreBtn} size={"text-xs"} functionBtn={ReadMoreBtnFunc}/>
             </div>
             <div className='flex gap-5'>
                 {

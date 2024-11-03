@@ -10,8 +10,10 @@ import Header from "../Header/Header"
 import Highlights from "../Highlights/Highlights"
 import MainSwipper from "../MainSwipper/MainSwipper"
 import PopularBrands from "../PopularBrands/PopularBrands"
+import SellSelection from "../SellSelection/SellSelection"
 import TwoPicsBox from "../TwoPicsBox/TwoPicsBox"
 import UserStories from "../UserStories/UserStories"
+import YourIntrest from "../YourIntrest/YourIntrest"
 
 function App() {
 
@@ -30,7 +32,10 @@ function App() {
         <TwoPicsBox/>
         <PopularBrands/>
         <TwoPicsBox/>
+        <YourIntrest/>
         <Digiclub/>
+        <YourIntrest/>
+        <SellSelection/>
         <Blog/>
         <hr />
         <Footer/>

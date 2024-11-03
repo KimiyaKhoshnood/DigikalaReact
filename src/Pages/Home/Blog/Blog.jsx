@@ -12,7 +12,7 @@ const Blog = () => {
       <div className="max-w-[1336px] w-full flex flex-col gap-3">
         <div className="flex justify-between items-center w-full px-5 py-2">
           <h5><strong>خواندنی‌ها</strong></h5>
-          <BlueLinkWithLeftArrow text={"مطالب بیشتر در دیجی‌کالا مگ"} />
+          <BlueLinkWithLeftArrow text={"مطالب بیشتر در دیجی‌کالا مگ"} size={"text-xs"} />
         </div>
         <div className="gap-4 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
           {BlogP?.map((elem) => {
