@@ -37,7 +37,7 @@ function App() {
         <YourIntrest/>
         <SellSelection/>
         <Blog/>
-        <hr />
+        <hr className="lg:block hidden"/>
         <Footer/>
       </div>
     </>
