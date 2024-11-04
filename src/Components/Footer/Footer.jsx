@@ -1,9 +1,5 @@
 import Icon from "react-icons-kit";
 import { arrow_up } from "react-icons-kit/ikons/arrow_up";
-import { arrow_left } from "react-icons-kit/ikons/arrow_left";
-import { useState } from "react";
-import BlueLinkWithLeftArrow from "../../../Components/BlueLinkWithLeftArrow/BlueLinkWithLeftArrow";
-import { headphones } from "react-icons-kit/feather/headphones";
 import FooterSectionWithButton from "./FooterSectionWithButton";
 import ReadMore from "./ReadMore";
 import FooterListsBar from "./FooterListsBar";
@@ -183,14 +179,6 @@ const Footer = () => {
     ],
   };
 
-  //   const ReadMoreBtnFunc = () => {
-  //     setReadMore(!readMore);
-  //     readMore ? setReadMoreBtn("مشاهده بیشتر") : setReadMoreBtn("بستن");
-  //   };
-
-  //   const [readMore, setReadMore] = useState(false);
-  //   const [readMoreBtn, setReadMoreBtn] = useState("مشاهده بیشتر");
-
   return (
     <>
       <footer>
@@ -355,7 +343,7 @@ const Footer = () => {
             {FooterP.digiBrands.map((elem) => {
               return (
                 elem.id <= 8 && (
-                  <div className="flex-1 flex justify-center bg-gray-200 py-5 border-b border-r border-gray-300">
+                  <div className="flex-1 flex justify-center bg-gray-200 py-7 border-b border-r border-gray-300">
                     <img className="h-[20px]" src={elem.img} alt="" />
                   </div>
                 )
@@ -366,7 +354,7 @@ const Footer = () => {
             {FooterP.digiBrands.map((elem) => {
               return (
                 elem.id > 8 && (
-                  <div className="flex-1 flex justify-center bg-gray-200 py-5 border-b border-r border-gray-300">
+                  <div className="flex-1 flex justify-center bg-gray-200 py-7 border-b border-r border-gray-300">
                     <img className="h-[20px]" src={elem.img} alt="" />
                   </div>
                 )

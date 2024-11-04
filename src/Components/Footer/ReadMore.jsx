@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BlueLinkWithLeftArrow from "../../../Components/BlueLinkWithLeftArrow/BlueLinkWithLeftArrow";
+import BlueLinkWithLeftArrow from "../BlueLinkWithLeftArrow/BlueLinkWithLeftArrow";
 
 const ReadMore = ({ info, titleSize, infoSize }) => {
   const [readMore, setReadMore] = useState(false);
