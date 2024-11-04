@@ -182,6 +182,8 @@ const Footer = () => {
   return (
     <>
       <footer>
+        <hr className="lg:block hidden" />
+
         <div className="lg:block hidden">
           <div className="flex justify-center px-4">
             <div className="max-w-[1636px] w-full flex justify-between mt-5">

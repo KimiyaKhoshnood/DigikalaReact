@@ -35,7 +35,6 @@ const Home = () => {
       <YourIntrest />
       <SellSelection />
       <Blog />
-      <hr className="lg:block hidden" />
       <Footer />
     </div>
   );
