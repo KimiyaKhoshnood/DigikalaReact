@@ -14,6 +14,10 @@ import {arrow_left} from 'react-icons-kit/ikons/arrow_left'
 import {u1F69A} from 'react-icons-kit/noto_emoji_regular/u1F69A'
 import {u23F0} from 'react-icons-kit/noto_emoji_regular/u23F0'
 import {androidStar} from 'react-icons-kit/ionicons/androidStar'
+import BlueLinkWithLeftArrow from "../../../Components/BlueLinkWithLeftArrow/BlueLinkWithLeftArrow";
+import OffPercent from "../../../Components/OffPercent/OffPercent";
+import LineThroughPrice from "../../../Components/LineThroughPrice/LineThroughPrice";
+import PriceWithToman from "../../../Components/PriceWithToman/PriceWithToman";
 
 
 const MainProductInfo = () => {
@@ -105,6 +109,23 @@ const MainProductInfo = () => {
                 <div className="border rounded-full w-fit p-1"><div className="bg-white w-[30px] h-[30px] rounded-full border"></div></div>
                 <div className="border rounded-full w-fit p-1"><div className="bg-pink-400 w-[30px] h-[30px] rounded-full border"></div></div>
             </div>
+            <span className="font-bold">بیمه</span>
+            <div className="border rounded-lg flex">
+                <div className="h-full flex items-center px-3 border-l">
+                    <input className="scale-150" type="checkbox" name="checkbox" id="" />
+                </div>
+                <div className="p-3 w-full flex flex-col gap-3">
+                    <p className="text-xs">بیمه تجهیزات دیجیتال - بیمه سامان</p>
+                    <div className="flex justify-between">
+                        <span className="flex gap-2 items-center">
+                            <OffPercent off={"۵۰"} />
+                            <LineThroughPrice oldPrice={"۱,۷۵۱,۶۳۰"} />
+                            <PriceWithToman price={"۸۷۶,۳۶۰"} textSize={"text-sm"} />
+                        </span>
+                        <BlueLinkWithLeftArrow text={"جزییات"} size={"text-xs"}/>
+                    </div>
+                </div>
+            </div>
           </div>
           <div className="w-full max-w-[330px] flex flex-col gap-2">
             <div className="bg-gray-100 border border-gray-300 rounded-xl p-4 flex flex-col gap-3">
@@ -132,14 +153,7 @@ const MainProductInfo = () => {
                 <div className="flex justify-center items-center text-[11px] w-[18px] h-[18px] border border-gray-600 rounded-full">
                   i
                 </div>
-                <div className="flex gap-1">
-                  ۴۵,۸۹۹,۰۰۰
-                  <img
-                    className="w-5 h-5"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAjW86KHVtGKOts1_vzW0oM03BOSx5djx5Q&s"
-                    alt=""
-                  />
-                </div>
+                <PriceWithToman price={"۴۵,۸۹۹,۰۰۰"} textSize={"text-lg"} />
               </div>
               <span className="text-xs text-sky-700">{"۱۰+ هزار بازدید در ۲۴ ساعت اخیر"}</span>
               <button className="bg-rose-500 text-white w-full py-3 rounded-lg text-xs">افزودن به سبد</button>

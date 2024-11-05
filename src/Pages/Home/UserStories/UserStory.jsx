@@ -1,7 +1,7 @@
 const UserStory = ({text, img, status}) => {
     return ( 
         <>
-        <div className="flex flex-col px-4 gap-2">
+        <div className="flex flex-col px-4 gap-2 w-fit">
             <div className="w-[84px] h-[84px] rounded-full bg-gradient-to-t from-[#E03D96] to-[#7D4C9E] p-[2px]">
                 <div className="bg-white w-full h-full rounded-full p-[3px]">
                     <img className="bg-red-500 w-full h-full rounded-full" src={img} alt="" />

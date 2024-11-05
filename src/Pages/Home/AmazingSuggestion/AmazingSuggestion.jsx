@@ -1,4 +1,4 @@
-import AmazingSuggestionItems from "./AmazingSuggestionItems/AmazingSuggestionItems";
+import AmazingSuggestionItems from "./AmazingSuggestionItems";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation} from 'swiper/modules';
@@ -51,7 +51,7 @@ const AmazingSuggestion = () => {
               modules={[Navigation]}
               className="mySwiper h-full lg:pl-5 pl-4 lg:pr-0 pr-4"
             >
-              <SwiperSlide className="w-[160px] h-full lg:block hidden">
+              <SwiperSlide className="!w-[160px] h-full lg:block hidden">
                 <a href="" className="flex flex-col items-center justify-between h-full py-3">
                   <img className="w-[88px] h-[88px]" src="https://www.digikala.com/statics/img/svg/specialCarousel/Amazings.svg" alt="" />
                   <div className="flex gap-1 justify-center">
@@ -67,7 +67,7 @@ const AmazingSuggestion = () => {
               </SwiperSlide>
               {AmazingSuggestionP.map((elem) => {
                 return (
-                  <SwiperSlide className="w-fit h-full bg-white" id="redSwiper" key={elem.id}>
+                  <SwiperSlide className="!w-fit h-full bg-white" id="redSwiper" key={elem.id}>
                     <AmazingSuggestionItems
                       image={elem.image}
                       title={elem.title}
@@ -78,7 +78,7 @@ const AmazingSuggestion = () => {
                   </SwiperSlide>
                 );
               })}
-              <SwiperSlide className="lg:w-[160px] w-[130px] h-full">
+              <SwiperSlide className="lg:w-[160px] !w-[130px] h-full ml-3">
                 <a href="" className="flex flex-col items-center gap-2 justify-center h-full bg-white rounded-l-[10px]">
                     <div className="w-[50px] h-[50px] flex justify-center items-center outline outline-[#19bfd3] outline-2 rounded-full">
                         <Icon className="text-[#19bfd3]" icon={arrowLeft} size={30}/>

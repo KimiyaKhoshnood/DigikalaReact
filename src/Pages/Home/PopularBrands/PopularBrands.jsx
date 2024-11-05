@@ -1,4 +1,4 @@
-import PopularBrandItems from "./PopularBrandItems/PopularBrandItems";
+import PopularBrandItems from "./PopularBrandItems";
 
 import Icon from "react-icons-kit";
 import { star } from "react-icons-kit/feather/star";
@@ -46,7 +46,7 @@ const PopularBrands = () => {
             >
               {PopularBrandP.map((elem) => {
                 return (
-                  <SwiperSlide className="w-fit h-full border-l" key={elem.id}>
+                  <SwiperSlide className="!w-fit h-full border-l" key={elem.id}>
                     <PopularBrandItems image={elem.image}/>
                   </SwiperSlide>
                 );

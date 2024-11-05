@@ -1,3 +1,7 @@
+import LineThroughPrice from "../../../Components/LineThroughPrice/LineThroughPrice"
+import OffPercent from "../../../Components/OffPercent/OffPercent"
+import PriceWithToman from "../../../Components/PriceWithToman/PriceWithToman"
+
 const SellSelection = () => {
   const SellSelectionP = [
     {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":1},
@@ -32,10 +36,12 @@ const SellSelection = () => {
                             <img className="h-[150px]" src={elem.img} alt="" />
                         </div>
                         <div className="flex justify-between items-center w-full">
-                            <span className="bg-red-600 px-2 py-[2px] text-xs text-white h-fit rounded-xl">{elem.offPercent}%</span>
-                            <span className="flex gap-1">{elem.offPrice} <img className="w-5 h-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAjW86KHVtGKOts1_vzW0oM03BOSx5djx5Q&s" alt="" /></span>
+                            <OffPercent off={elem.offPercent} />
+                            {/* <span className="flex gap-1">{elem.offPrice} <img className="w-5 h-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAjW86KHVtGKOts1_vzW0oM03BOSx5djx5Q&s" alt="" /></span> */}
+                            <PriceWithToman  price={elem.offPrice} textSize={"text-md"} />
+
                         </div>
-                        <span className="text-sm text-gray-400 line-through w-full block text-left px-5">{elem.price}</span>
+                        <div className="w-full text-left pl-5"><LineThroughPrice oldPrice={elem.price} /></div>
                     </div>
                 })}
             </div>

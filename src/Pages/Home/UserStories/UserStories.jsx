@@ -1,4 +1,4 @@
-import UserStory from "./UserStory/UserStory";
+import UserStory from "./UserStory";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation} from 'swiper/modules';
@@ -32,8 +32,8 @@ const UserStories = () => {
         <div className="flex justify-center lg:px-4">
         <div className="w-full h-fit py-4 max-w-[1336px]">
         <Swiper
-        slidesPerView={'auto'}
-        spaceBetween={0}
+        slidesPerView={"auto"}
+        spaceBetween={5}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper h-full"
@@ -41,7 +41,7 @@ const UserStories = () => {
         {
             UserStoriesP.map((elem)=>{
                 return(
-                    <SwiperSlide className="w-fit h-full" key={elem.id}>
+                    <SwiperSlide className="!w-fit h-full" key={elem.id}>
                         <UserStory text={elem.text} img={elem.img} status={elem.status} />
                     </SwiperSlide>
                 )
