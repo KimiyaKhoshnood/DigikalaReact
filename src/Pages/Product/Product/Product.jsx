@@ -5,6 +5,7 @@ import Address from "../Address/Address"
 import DigikalaAdvantages from "../DigikalaAdvantages/DigikalaAdvantages"
 import MainProductInfo from "../MainProductInfo/MainProductInfo"
 import ProductSellers from "../ProductSellers/ProductSellers"
+import SimilarProducts from "../SimilarProducts/SimilarProducts"
 
 const Product = () => {
   return (
@@ -14,7 +15,8 @@ const Product = () => {
             <Address/>
             <MainProductInfo/>
             <DigikalaAdvantages/>
-            {/* <ProductSellers/> */}
+            <ProductSellers/>
+            <SimilarProducts/>
         </div>
         <Footer/>
         

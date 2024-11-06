@@ -1,5 +1,8 @@
 import Icon from 'react-icons-kit'
-import {u2734} from 'react-icons-kit/noto_emoji_regular/u2734'
+import EachSeller from './EachSeller';
+import BlueLinkWithLeftArrow from '../../../Components/BlueLinkWithLeftArrow/BlueLinkWithLeftArrow';
+import { useState } from 'react';
+import TopicWithRedLine from '../TopicWithRedLine/TopicWithRedLine';
 
 const ProductSellers = () => {
   const ProductSellersP = [
@@ -13,26 +16,82 @@ const ProductSellers = () => {
         "price": "۴۵,۸۹۹,۰۰۰",
         "plusService": true,
         "id": 1
+    },{
+        "title": "سی تلکام",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه پیشتازان فناوری سیب طلایی (سی تلکام)",
+        "price": "۴۵,۹۲۰,۰۰۰",
+        "plusService": true,
+        "id": 2
+    },{
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 3
+    },{
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 4
+    },{
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 5
+    },{
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 6
     }
   ]
+
+  const [readMore, setReadMore] = useState(false);
+  const [readMoreBtn, setReadMoreBtn] = useState("مشاهده بیشتر");
+
+  const ReadMoreBtnFunc = () => {
+    setReadMore(!readMore);
+    readMore ? setReadMoreBtn("مشاهده بیشتر") : setReadMoreBtn("بستن");
+  }; 
+
   return (
-    <div className="w-full max-w-[1676px] px-4">
+    <div className="w-full max-w-[1676px] p-4">
         <div className="h-1 bg-gray-200"></div>
           <div className="py-3">
-            <p className="py-3">فروشندگان این کالا</p>
-            <div className="h-[2px] w-[70px] bg-rose-500"></div>
+            <TopicWithRedLine title={"فروشندگان این کالا"}/>
           </div>
           <div>
-            {ProductSellersP.map((elem)=>{
-                return <div className=''>
-                    {elem.plusService && <div className='text-xs bg-purple-300'>
-                        <span className='text-purple-500'><Icon icon={u2734} size={20} />خدمات پلاس </span>
-                        <span className='text-gray-500'>ارسال فوری برای شهر تهران و کرج (رایگان)</span>
-                        </div>}
-                </div>
+            {ProductSellersP.map((elem, index)=>{
+                return (index<4 || readMore) && <EachSeller data={elem}/>
             })}
           </div>
-        <div className="h-1 bg-gray-200"></div>
+          <div className='py-3'>
+            <BlueLinkWithLeftArrow text={readMoreBtn} size={"text-xs"} functionBtn={ReadMoreBtnFunc}/>
+          </div>
+        <div className="h-1 bg-gray-200 mt-3"></div>
     </div>
   )
 }
