@@ -21,6 +21,14 @@ import PriceWithToman from "../../../Components/PriceWithToman/PriceWithToman";
 
 
 const MainProductInfo = () => {
+  const MainProductInfoP = {
+    "features": [
+        {"title": "فناوری صفحه‌ نمایش", "detail": "Super Retina XDR OLED", "id":1 },
+        {"title": "نسخه سیستم عامل", "detail": "iOS 15", "id":2 },
+        {"title": "رزولوشن دوربین اصلی", "detail": "12 مگاپیکسل", "id":3 },
+        {"title": "اندازه", "detail": "6.1", "id":4 },
+    ]
+  }
   return (
     <div className="p-4 w-full max-w-[1676px] flex">
       <div className="flex flex-col">
@@ -112,9 +120,9 @@ const MainProductInfo = () => {
             <span className="font-bold">بیمه</span>
             <div className="border rounded-lg flex">
                 <div className="h-full flex items-center px-3 border-l">
-                    <input className="scale-150" type="checkbox" name="checkbox" id="" />
+                    <input className="scale-150" type="checkbox" name="checkbox"/>
                 </div>
-                <div className="p-3 w-full flex flex-col gap-3">
+                <div className="p-3 w-full flex flex-col gap-4">
                     <p className="text-xs">بیمه تجهیزات دیجیتال - بیمه سامان</p>
                     <div className="flex justify-between">
                         <span className="flex gap-2 items-center">
@@ -124,6 +132,61 @@ const MainProductInfo = () => {
                         </span>
                         <BlueLinkWithLeftArrow text={"جزییات"} size={"text-xs"}/>
                     </div>
+                </div>
+            </div>
+            <span className="font-bold">ویژگی‌ها</span>
+            <div className="grid grid-cols-3 gap-2">
+                {MainProductInfoP.features.map((elem)=>{
+                    return <div className="bg-gray-100 rounded-lg py-3 px-2 flex flex-col gap-2" key={elem.id}>
+                        <p className="text-gray-400 text-xs">{elem.title}</p>
+                        <p className="text-gray-700 text-xs font-bold">{elem.detail}</p>
+                    </div>
+                })}
+            </div>
+            <div className="flex items-center gap-4">
+                <div className="h-[1px] border-t border-gray-300 w-full"></div>
+                <button className="px-4 py-2 border border-gray-300 rounded-lg text-xs text-nowrap">
+                    مشاهده همه ویژگی‌ها
+                    <Icon icon={arrow_left} />
+                </button>
+                <div className="h-[1px] border-t border-gray-300 w-full"></div>
+            </div>
+            <div className="flex gap-3">
+                <div className="py-1">
+                    <div className="flex justify-center items-center text-[11px] w-[16px] h-[16px] bg-gray-400 text-white rounded-full p-t-[5px]">
+                    i
+                    </div>
+                </div>
+                <p className="text-xs text-gray-500 leading-loose">امکان برگشت کالا در گروه موبایل با دلیل "انصراف از خرید" تنها در صورتی مورد قبول است که پلمب کالا باز نشده باشد.
+                تمام گوشی‌های دیجی‌کالا ضمانت رجیستری دارند. در صورت وجود مشکل رجیستری، می‌توانید بعد از مهلت قانونی ۳۰ روزه، گوشی خریداری‌شده را مرجوع کنید.</p>
+            </div>
+            <div className="border border-gray-300 rounded-lg flex items-center justify-between px-4">
+                <span>ارسال رایگان برای این کالا</span>
+                <div><img className="h-[60px]" src="https://www.digikala.com/_next/static/media/normalFreeShippingTouchPointImage.d4416515.svg" alt="" /></div>
+            </div>
+            <div className="border border-gray-300 rounded-lg p-4">
+                <div className="flex justify-between text-sm pb-3">
+                    <div className="flex items-center gap-2">
+                        <div className="bg-blue-800 w-4 h-4"></div>
+                        <span>خرید این کالا با تسهیلات دیجی‌پی</span>
+                    </div>
+                    <Icon icon={arrow_left} />
+                </div>
+                <div className="text-gray-400 leading-loose flex gap-1">
+                    <div className="flex flex-col items-center px-1">
+                        <div className="border w-[1px] bg-gray-500 flex-1"></div>
+                        <div className="bg-blue-800 w-[6px] h-[6px] rounded-sm"></div>
+                        <div className="border w-[1px] bg-gray-500 flex-1"></div>
+                    </div>
+                    <h3 className="text-[11px]">فقط با ماهی ۴,۷۰۳,۸۰۰ تومان (۱۲ ماه)</h3>
+                </div>
+                <div className="text-gray-400 leading-loose flex gap-1">
+                    <div className="flex flex-col items-center px-1">
+                        <div className="border w-[1px] bg-gray-500 flex-1"></div>
+                        <div className="bg-blue-800 w-[6px] h-[6px] rounded-sm"></div>
+                        <div className="border w-[1px] bg-gray-500 flex-1"></div>
+                    </div>
+                    <h3 className="text-[11px]">فقط با ماهی ۴,۷۰۳,۸۰۰ تومان (۱۲ ماه)</h3>
                 </div>
             </div>
           </div>
