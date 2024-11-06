@@ -5,6 +5,8 @@ import Address from "../Address/Address"
 import DigikalaAdvantages from "../DigikalaAdvantages/DigikalaAdvantages"
 import MainProductInfo from "../MainProductInfo/MainProductInfo"
 import ProductSellers from "../ProductSellers/ProductSellers"
+import RelatedTags from "../RelatedTags/RelatedTags"
+import RelatedVideos from "../RelatedVideos/RelatedVideos"
 import SimilarProducts from "../SimilarProducts/SimilarProducts"
 
 const Product = () => {
@@ -17,6 +19,8 @@ const Product = () => {
             <DigikalaAdvantages/>
             <ProductSellers/>
             <SimilarProducts/>
+            <RelatedVideos/>
+            <RelatedTags/>
         </div>
         <Footer/>
         

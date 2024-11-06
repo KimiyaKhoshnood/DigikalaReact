@@ -12,7 +12,7 @@ const ReadMore = ({ info, titleSize, infoSize }) => {
 
   return (
     <div className="flex-1 py-3">
-      <div className="bg-gradient-to-b from-white to-white/50">
+      <div className="">
         <h1 className={`${titleSize} text-gray-600 leading-loose`}>
           <strong>
             فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
