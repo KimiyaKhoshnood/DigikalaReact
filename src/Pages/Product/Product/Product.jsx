@@ -1,31 +1,36 @@
-import Footer from "../../../Components/Footer/Footer"
-import Header from "../../../Components/Header/Header"
-import OnlineSupport from "../../../Components/OnlineSupport/OnlineSupport"
-import Address from "../Address/Address"
-import DigikalaAdvantages from "../DigikalaAdvantages/DigikalaAdvantages"
-import MainProductInfo from "../MainProductInfo/MainProductInfo"
-import ProductSellers from "../ProductSellers/ProductSellers"
-import RelatedTags from "../RelatedTags/RelatedTags"
-import RelatedVideos from "../RelatedVideos/RelatedVideos"
-import SimilarProducts from "../SimilarProducts/SimilarProducts"
+import Footer from "../../../Components/Footer/Footer";
+import Header from "../../../Components/Header/Header";
+import OnlineSupport from "../../../Components/OnlineSupport/OnlineSupport";
+import Address from "../Address/Address";
+import DetailsSection from "../DetailsSection/DetailsSection";
+import DigikalaAdvantages from "../DigikalaAdvantages/DigikalaAdvantages";
+import MainProductInfo from "../MainProductInfo/MainProductInfo";
+import PindoRelated from "../PindoRelated/PindoRelated";
+import ProductSellers from "../ProductSellers/ProductSellers";
+import ProductSwiper from "../ProductSwiper/ProductSwiper";
+import RelatedTags from "../RelatedTags/RelatedTags";
+import RelatedVideos from "../RelatedVideos/RelatedVideos";
+import SimilarProducts from "../SimilarProducts/SimilarProducts";
 
 const Product = () => {
   return (
     <div>
-        <Header/>
-        <div className="flex flex-col items-center">
-            <Address/>
-            <MainProductInfo/>
-            <DigikalaAdvantages/>
-            <ProductSellers/>
-            <SimilarProducts/>
-            <RelatedVideos/>
-            <RelatedTags/>
-        </div>
-        <Footer/>
-        
+      <Header />
+      <div className="flex flex-col items-center">
+        <Address />
+        <MainProductInfo />
+        <DigikalaAdvantages />
+        <ProductSellers />
+        <SimilarProducts />
+        <RelatedVideos />
+        <RelatedTags />
+        <PindoRelated />
+        <ProductSwiper />
+        <DetailsSection/>
+      </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
