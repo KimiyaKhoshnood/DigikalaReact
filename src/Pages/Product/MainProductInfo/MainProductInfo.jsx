@@ -216,7 +216,7 @@ const MainProductInfo = () => {
                 <div className="flex justify-center items-center text-[11px] w-[18px] h-[18px] border border-gray-600 rounded-full">
                   i
                 </div>
-                <PriceWithToman price={"۴۵,۸۹۹,۰۰۰"} textSize={"text-lg"} />
+                <PriceWithToman price={"۴۵,۸۹۹,۰۰۰"} textSize={"text-lg font-bold"} />
               </div>
               <span className="text-xs text-sky-700">{"۱۰+ هزار بازدید در ۲۴ ساعت اخیر"}</span>
               <button className="bg-rose-500 text-white w-full py-3 rounded-lg text-xs">افزودن به سبد</button>

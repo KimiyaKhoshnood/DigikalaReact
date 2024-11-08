@@ -2,6 +2,7 @@ import Footer from "../../../Components/Footer/Footer";
 import Header from "../../../Components/Header/Header";
 import OnlineSupport from "../../../Components/OnlineSupport/OnlineSupport";
 import Address from "../Address/Address";
+import BoughtTogether from "../BoughtTogether/BoughtTogether";
 import DetailsSection from "../DetailsSection/DetailsSection";
 import DigikalaAdvantages from "../DigikalaAdvantages/DigikalaAdvantages";
 import MainProductInfo from "../MainProductInfo/MainProductInfo";
@@ -27,6 +28,7 @@ const Product = () => {
         <PindoRelated />
         <ProductSwiper />
         <DetailsSection/>
+        <BoughtTogether/>
       </div>
       <Footer />
     </div>
