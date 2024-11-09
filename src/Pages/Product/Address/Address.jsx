@@ -12,7 +12,7 @@ const Address = () => {
             /
             <a href="">گوشی موبایل</a>
         </div>
-        <div className="flex gap-8">
+        <div className="lg:flex hidden gap-8">
             <div>
                 ثبت آگهی در پیندو
                 <Icon className="px-1" icon={megaphone}/>
