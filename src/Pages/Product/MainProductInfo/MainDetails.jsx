@@ -9,7 +9,7 @@ import { arrow_left } from 'react-icons-kit/ikons/arrow_left'
 
 const MainDetails = ({data}) => {
   return (
-    <div className="lg:w-fit w-full flex flex-col gap-4">
+    <div className="lg:w-fit w-full flex flex-col gap-4 px-4">
             <div className="text-gray-400 flex items-center">
               <span className="text-wrap text-xs flex-1">
                 Apple iPhone 13 CH Dual SIM 128GB And 4GB RAM Mobile Phone - Not
@@ -73,21 +73,20 @@ const MainDetails = ({data}) => {
                 </button>
                 <div className="h-[1px] border-t border-gray-300 w-full"></div>
             </div>
-            <div className='lg:hidden block w-full h-1 bg-gray-200'></div>
             <div className="lg:flex hidden gap-3">
                 <div className="py-1">
-                    <div className="flex justify-center items-center text-[11px] w-[16px] h-[16px] bg-gray-400 text-white rounded-full p-t-[5px]">
+                    <div className="flex justify-center items-center text-[11px] w-[16px] h-[16px] bg-gray-400 text-white rounded-full pt-[5px]">
                     i
                     </div>
                 </div>
                 <p className="text-xs text-gray-500 leading-loose">امکان برگشت کالا در گروه موبایل با دلیل "انصراف از خرید" تنها در صورتی مورد قبول است که پلمب کالا باز نشده باشد.
                 تمام گوشی‌های دیجی‌کالا ضمانت رجیستری دارند. در صورت وجود مشکل رجیستری، می‌توانید بعد از مهلت قانونی ۳۰ روزه، گوشی خریداری‌شده را مرجوع کنید.</p>
             </div>
-            <div className="border border-gray-300 rounded-lg flex items-center justify-between px-4">
+            <div className="border border-gray-300 rounded-lg lg:flex hidden items-center justify-between px-4">
                 <span>ارسال رایگان برای این کالا</span>
                 <div><img className="h-[60px]" src="https://www.digikala.com/_next/static/media/normalFreeShippingTouchPointImage.d4416515.svg" alt="" /></div>
             </div>
-            <div className="border border-gray-300 rounded-lg p-4">
+            <div className="border border-gray-300 rounded-lg p-4 lg:block hidden">
                 <div className="flex justify-between text-sm pb-3">
                     <div className="flex items-center gap-2">
                         <div className="bg-blue-800 w-4 h-4"></div>

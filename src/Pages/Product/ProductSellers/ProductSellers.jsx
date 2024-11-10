@@ -78,7 +78,7 @@ const ProductSellers = () => {
   }; 
 
   return (
-    <div className="w-full max-w-[1676px] p-4">
+    <div className="lg:block hidden w-full max-w-[1676px] p-4">
         <div className="h-1 bg-gray-200"></div>
           <div className="py-3">
             <TopicWithRedLine title={"فروشندگان این کالا"}/>

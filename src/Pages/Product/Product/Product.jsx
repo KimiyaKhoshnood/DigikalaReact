@@ -21,7 +21,7 @@ const Product = () => {
         <Address />
         <MainProductInfo />
         <DigikalaAdvantages />
-        <ProductSellers />
+        <ProductSellers/>
         <SimilarProducts />
         <RelatedVideos />
         <RelatedTags />

@@ -23,7 +23,7 @@ const SimilarProducts = () => {
     ]
   return (
     <div className="w-full max-w-[1676px] p-4">
-      <div className="border border-b-4 rounded-lg px-4 pt-4">
+      <div className="lg:border lg:border-b-4 rounded-lg lg:px-4 pt-4">
         <TopicWithRedLine title={"کالاهای مشابه"}/>
         <Swiper
         slidesPerView={"auto"}

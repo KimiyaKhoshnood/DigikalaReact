@@ -387,7 +387,7 @@ const DetailsSection = () => {
           </section>
         </div>
         {/* left */}
-        <div className="p-5">
+        <div className="p-5 xl:block hidden">
           <div className="flex flex-col gap-3 border border-gray-200 bg-gray-100 rounded-xl p-4 text-xs leading-loose max-w-[300px]">
             <div className="flex gap-2">
               <div>

@@ -33,7 +33,7 @@ const PindoRelated = () => {
   ];
   return (
     <div className="w-full max-w-[1676px] p-4">
-      <div className="bg-gray-100 bg-[url(https://www.digikala.com/_next/static/media/PindoTouchPointBackground.f54ee21d.svg)] bg-no-repeat bg-right w-full rounded-lg p-4 flex justify-between">
+      <div className="bg-gray-100 bg-[url(https://www.digikala.com/_next/static/media/PindoTouchPointBackground.f54ee21d.svg)] bg-no-repeat bg-right w-full rounded-lg p-4 flex lg:flex-row flex-col justify-between">
         <div className="flex items-center">
           <div>
             <img

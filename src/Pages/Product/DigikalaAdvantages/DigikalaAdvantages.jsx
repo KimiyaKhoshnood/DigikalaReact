@@ -27,9 +27,9 @@ const DigikalaAdvantages = () => {
         },
       ]
   return (
-    <div className="w-full max-w-[1676px] p-4 min-w-[85px]">
-        <div className="h-[1px] bg-gray-200"></div>
-        <div className="flex gap-1 py-3 max-w-[1636px] w-full">
+    <div className="w-full max-w-[1676px] lg:p-4 py-4 min-w-[85px] lg:bg-white bg-gray-100">
+        <div className="lg:block hidden h-[1px] bg-gray-200"></div>
+        <div className="flex gap-1 py-3 max-w-[1636px] w-full bg-white">
               {digikalaAdvantagesP.map((elem) => {
                 return (
                   <div className="text-[11px] text-gray-400 flex-1 flex lg:flex-row flex-col items-center justify-center">
