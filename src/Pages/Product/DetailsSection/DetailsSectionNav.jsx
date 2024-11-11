@@ -24,13 +24,13 @@ const DetailsSectionNav = () => {
 
   return (
     <>
-    <nav>
-        <ul className="flex text-xs text-gray-600 border-b-4 w-fit border-transparent sticky top-1 z-50">
-            <li className="p-2 border-b-4 w-fit border-transparent"><a href="#introduction">معرفی</a></li>
-            <li className="p-2 border-b-4 w-fit border-transparent">بررسی تخصصی</li>
-            <li className="p-2 border-b-4 w-fit border-transparent"><a href="#details">مشخصات</a></li>
-            <li className="p-2 border-b-4 w-fit border-transparent"><a href="#opinions">دیدگاه‌ها</a></li>
-            <li className="p-2 border-b-4 w-fit border-transparent"><a href="#questions">پرسش‌ها</a></li>
+    <nav className="">
+        <ul className="flex justify-evenly text-xs text-gray-600 lg:w-fit w-full border-transparent sticky z-50">
+            <li className="p-2 border-b-4 border-rose-500 lg:w-fit flex-1 text-center text-nowrap border-transparent"><a href="#introduction">معرفی</a></li>
+            <li className="p-2 border-b-4 lg:w-fit flex-1 text-center text-nowrap border-transparent"><a href="#introduction">بررسی تخصصی</a></li>
+            <li className="p-2 border-b-4 lg:w-fit flex-1 text-center text-nowrap border-transparent"><a href="#details">مشخصات</a></li>
+            <li className="p-2 border-b-4 lg:w-fit flex-1 text-center text-nowrap border-transparent"><a href="#opinions">دیدگاه‌ها</a></li>
+            <li className="p-2 border-b-4 lg:w-fit flex-1 text-center text-nowrap border-transparent"><a href="#questions">پرسش‌ها</a></li>
             <NavLink/>
         </ul>
     </nav>

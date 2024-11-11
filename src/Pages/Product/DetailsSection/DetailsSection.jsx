@@ -136,12 +136,13 @@ const DetailsSection = () => {
       <div className="flex">
         {/* right */}
         <div className="flex-1">
+          {/* introduction */}
           <section className="pt-4 pb-7" id="introduction">
             <TopicWithRedLine title={"معرفی"} />
             <p
               className={`${
-                readMore ? "" : "line-clamp-3"
-              } text-sm leading-loose my-2`}
+                readMore ? "" : "lg:line-clamp-3 line-clamp-2"
+              } lg:text-sm text-xs leading-loose my-2`}
             >
               {DetailsSectionP.introduction}
             </p>
@@ -157,8 +158,8 @@ const DetailsSection = () => {
           <section className="py-5" id="professional">
             <TopicWithRedLine title={"بررسی تخصصی"} />
             <span className="font-bold py-5 block">معرفی</span>
-            <div className="flex">
-              <p className="text-sm leading-loose">
+            <div className="flex lg:flex-row flex-col lg:items-start items-center">
+              <p className="lg:text-sm text-xs leading-loose">
                 <span className="px-3">&nbsp;</span>
                 {DetailsSectionP.professionalDetails.introduction}
               </p>
@@ -178,14 +179,14 @@ const DetailsSection = () => {
           <div className="h-1 bg-gray-100"></div>
 
           <section className="py-5" id="details">
-            <TopicWithRedLine title={"مشخصات"} />
-            <div className="flex gap-5 py-5 leading-loose">
+            <TopicWithRedLine title={"مشخصات"} className="hidden" />
+            <div className="flex lg:flex-row flex-col gap-5 py-5 leading-loose">
               <span className="!w-64">مشخصات کلی</span>
-              <div className="flex flex-col text-sm flex-1">
+              <div className="flex flex-col lg:text-sm text-xs flex-1">
                 {DetailsSectionP.overallDetails.map((elem) => {
                   return (
                     <div className="flex items-center">
-                      <p className="text-gray-500 w-[200px]">{elem.title}</p>
+                      <p className="text-gray-500 lg:w-[200px] w-[104px]">{elem.title}</p>
                       <p className="border-b py-4 flex-1">{elem.detail}</p>
                     </div>
                   );
@@ -197,7 +198,7 @@ const DetailsSection = () => {
               size={"text-xs"}
               functionBtn={ReadMoreBtnFunc}
             />
-            <div className="flex items-center text-xs gap-2 py-2 text-gray-500">
+            <div className="flex items-center lg:text-xs text-[11px] gap-2 py-2 text-gray-500">
               <div className="flex justify-center items-center text-[11px] w-[14px] h-[14px] border border-gray-600 text-gray-500 rounded-full">
                 i
               </div>
@@ -215,7 +216,7 @@ const DetailsSection = () => {
           <section className="py-5" id="opinions">
             <TopicWithRedLine title={"امتیاز و دیدگاه کاربران"} />
             <div className="flex gap-5">
-              <div className="flex flex-col gap-3 py-4 w-[260px]">
+              <div className="lg:flex hidden flex-col gap-3 py-4 w-[260px]">
                 <div>
                   <span className="text-2xl">
                     {DetailsSectionP.opinions.ratePersian}
