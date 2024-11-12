@@ -93,7 +93,7 @@ const Highlights = () => {
         <div className="py-3 flex lg:justify-between max-w-[1336px] w-full">
           <Swiper
             slidesPerView={width>1024?10:"auto"}
-            spaceBetween={15}
+            spaceBetween={5}
             freeMode={true}
             scrollbar={{clickable: true}}
             modules={[FreeMode, Scrollbar]}
@@ -101,7 +101,7 @@ const Highlights = () => {
           >
             {HighlightItemsP.map((elem, index) => {
               return (
-                <SwiperSlide key={index} className="h-full w-fit flex justify-center">
+                <SwiperSlide key={index} className="h-full !w-fit flex justify-center">
                   <HighlightItems text={elem.text} image={elem.image} key={elem.id}/>
                 </SwiperSlide>
               );

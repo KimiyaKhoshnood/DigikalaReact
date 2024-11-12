@@ -122,8 +122,8 @@ const BuyBySorting = () => {
               modules={[Navigation, FreeMode]}
               className="mySwiper w-full"
             >
-              <SwiperSlide className="h-full lg:min-w-full w-fit">
-                <div className="lg:grid-rows-2 lg:w-full lg:gap-x-[10px] sm:gap-x-[50px] gap-x-[0px] grid grid-flow-col grid-rows-3 w-fit sm:px-8 sm:py-0 p-3">
+              <SwiperSlide className="h-full lg:min-w-full !w-fit">
+                <div className="lg:grid-rows-2 lg:w-full lg:gap-x-[10px] sm:gap-x-[50px] gap-x-[0px] grid grid-flow-col grid-rows-3 w-fit sm:px-8 sm:py-0 p-1">
                   {BuyBySortingItemsP.map((elem) => {
                     return (
                       <BuyBySortingItems

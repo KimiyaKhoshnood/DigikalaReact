@@ -81,7 +81,10 @@ const Header = () => {
   const { posts, loading, error } = useSelector((state) => state.posts);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchPost("NavbarItemsP"));
+    setTimeout(() => {
+      dispatch(fetchPost("NavbarItemsP"));
+    }, 1000);
+    // dispatch(fetchPost("NavbarItemsP"));
   }, []);
 
   // console.log("NavbarItemsP", posts);
@@ -96,6 +99,12 @@ const Header = () => {
     window.addEventListener("resize", updateWindowDimensions);
     return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
+
+  if (loading) {
+    console.log(loading);
+    
+    return <div className="text-xl">loading</div>
+  }
 
   return (
     <header className="sticky top-0 z-20 bg-white">

@@ -16,6 +16,11 @@ import Rating from "./Rating";
 import { ic_help_center_outline } from "react-icons-kit/md/ic_help_center_outline";
 import { ic_thumb_up_outline } from "react-icons-kit/md/ic_thumb_up_outline";
 import { ic_thumb_down_outline } from "react-icons-kit/md/ic_thumb_down_outline";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import { FreeMode, Navigation } from "swiper/modules";
 
 const DetailsSection = () => {
   const DetailsSectionP = {
@@ -52,7 +57,7 @@ const DetailsSection = () => {
       {
         img: "https://dkstatics-public.digikala.com/digikala-comment-files/1365c6d3fea1631cb378690a07c6401be01b7aa2_1663925882.jpeg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
         user: "کاربر دیجی‌کالا",
-        rateEnglish: "5",
+        rateEnglish: 2.5,
         date: "۱۰ ساعت پیش",
         comment: "سلام سریع رسید ب دستم دقیق همون ساعت مرسی دیجی کالا",
         guaranteeName: "اسمارت تکنولوژی قشم",
@@ -64,7 +69,7 @@ const DetailsSection = () => {
       {
         img: "https://dkstatics-public.digikala.com/digikala-comment-files/e1882bbdffe6169610337ddd901134062d19e0f0_1652873908.jpeg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
         user: "کاربر دیجی‌کالا",
-        rateEnglish: "5",
+        rateEnglish: 5,
         date: "۱۰ ساعت پیش",
         comment: "سلام سریع رسید ب دستم دقیق همون ساعت مرسی دیجی کالا",
         guaranteeName: "اسمارت تکنولوژی قشم",
@@ -76,7 +81,7 @@ const DetailsSection = () => {
       {
         img: "https://dkstatics-public.digikala.com/digikala-comment-files/97314e3336eacad0a24b30b3a59d55a9ab61af26_1659511974.jpeg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
         user: "کاربر دیجی‌کالا",
-        rateEnglish: "5",
+        rateEnglish: 4.5,
         date: "۱۰ ساعت پیش",
         comment: "سلام سریع رسید ب دستم دقیق همون ساعت مرسی دیجی کالا",
         guaranteeName: "اسمارت تکنولوژی قشم",
@@ -88,7 +93,7 @@ const DetailsSection = () => {
       {
         img: "https://dkstatics-public.digikala.com/digikala-comment-files/73576b21ef699181b349ee49aad3d9ef9090682a_1652696686.jpg?x-oss-process=image/resize,m_lfit,h_1024,w_1024/quality,q_80",
         user: "کاربر دیجی‌کالا",
-        rateEnglish: "5",
+        rateEnglish: 3,
         date: "۱۰ ساعت پیش",
         comment: "سلام سریع رسید ب دستم دقیق همون ساعت مرسی دیجی کالا",
         guaranteeName: "اسمارت تکنولوژی قشم",
@@ -116,6 +121,28 @@ const DetailsSection = () => {
         },
         id: 2,
       },
+      {
+        question: "سلام گوشی نات اکتیو هستن؟ و اکبنده؟:) ",
+        answer: {
+          answer: "سلام.بله",
+          user: "علیرضا حبیبی",
+          tag: "خریدار",
+          like: 0,
+          dislike: 0,
+        },
+        id: 3,
+      },
+      {
+        question: "سلام گوشی نات اکتیو هستن؟ و اکبنده؟:) ",
+        answer: {
+          answer: "سلام.بله",
+          user: "علیرضا حبیبی",
+          tag: "خریدار",
+          like: 0,
+          dislike: 0,
+        },
+        id: 4,
+      },
     ],
   };
 
@@ -131,7 +158,8 @@ const DetailsSection = () => {
   console.log("stars", stars);
 
   return (
-    <div className="w-full max-w-[1676px] p-4">
+    // p-4 -> py-4
+    <div className="w-full max-w-[1676px] py-4">
       <DetailsSectionNav />
       <div className="flex">
         {/* right */}
@@ -186,7 +214,9 @@ const DetailsSection = () => {
                 {DetailsSectionP.overallDetails.map((elem) => {
                   return (
                     <div className="flex items-center">
-                      <p className="text-gray-500 lg:w-[200px] w-[104px]">{elem.title}</p>
+                      <p className="text-gray-500 lg:w-[200px] w-[104px]">
+                        {elem.title}
+                      </p>
                       <p className="border-b py-4 flex-1">{elem.detail}</p>
                     </div>
                   );
@@ -214,7 +244,22 @@ const DetailsSection = () => {
           <div className="h-1 bg-gray-100"></div>
 
           <section className="py-5" id="opinions">
-            <TopicWithRedLine title={"امتیاز و دیدگاه کاربران"} />
+            <div className="lg:block hidden">
+              <TopicWithRedLine title={"امتیاز و دیدگاه کاربران"} />
+            </div>
+            <div className="lg:hidden flex justify-between">
+              <span className="flex flex-col gap-2">
+                <span className="text-sm">دیدگاه‌ها</span>
+                <span className="text-[11px] text-gray-500">
+                  {DetailsSectionP.opinions.commentsCount} دیدگاه
+                </span>
+              </span>
+              <BlueLinkWithLeftArrow
+                text={readMoreBtn}
+                size={"text-xs"}
+                functionBtn={ReadMoreBtnFunc}
+              />
+            </div>
             <div className="flex gap-5">
               <div className="lg:flex hidden flex-col gap-3 py-4 w-[260px]">
                 <div>
@@ -248,27 +293,27 @@ const DetailsSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex-1">
-                <div className="flex gap-8">
+              <div className="flex-1 w-full">
+                <div className="flex gap-8 lg:py-0 py-3">
                   {DetailsSectionP.comments.map((elem) => {
                     return (
                       <img
-                        className="w-[57px] h-[57px] rounded-lg"
+                        className="lg:w-[57px] lg:h-[57px] w-[80px] h-[80px] rounded-lg"
                         src={elem.img}
                         alt=""
                       />
                     );
                   })}
                 </div>
-                <div className="py-5">
+                <div className="py-5 lg:block hidden">
                   <BlueLinkWithLeftArrow
                     text={readMoreBtn}
                     size={"text-xs"}
                     functionBtn={ReadMoreBtnFunc}
                   />
                 </div>
-                <hr />
-                <div className="flex justify-between text-xs py-4">
+                <div className="lg:block hidden bg-gray-200 h-[1px]"></div>
+                <div className="lg:flex hidden justify-between text-xs py-4">
                   <ul className="flex gap-3">
                     <li>
                       <Icon icon={sortAmountDesc} />
@@ -282,7 +327,7 @@ const DetailsSection = () => {
                     {DetailsSectionP.opinions.commentsCount} دیدگاه
                   </span>
                 </div>
-                <div className="py-4 border-b">
+                <div className="py-4 border-b lg:block hidden">
                   <span className="font-bold py-4">فیلتر بر اساس موضوع</span>
                   <div className="flex gap-2 py-4">
                     <span className="border rounded-3xl px-4  py-1 leading-loose cursor-pointer text-sm text-gray-700">
@@ -302,10 +347,34 @@ const DetailsSection = () => {
                     </span>
                   </div>
                 </div>
-                {DetailsSectionP.comments.map((elem) => {
-                  return <Reviews comment={elem} />;
-                })}
-                <div className="py-4">
+                <div className="lg:block hidden">
+                  {DetailsSectionP.comments.map((elem) => {
+                    return <Reviews comment={elem} />;
+                  })}
+                </div>
+                <div className="lg:hidden block w-[500px]">
+                  <Swiper
+                    slidesPerView={"auto"}
+                    spaceBetween={10}
+                    freeMode={true}
+                    navigation={true}
+                    modules={[FreeMode, Navigation]}
+                    className="mySwiper"
+                  >
+                    {DetailsSectionP.comments.map((elem) => {
+                      return (
+                        <SwiperSlide
+                          className="!w-fit h-full py-4"
+                          id="redSwiper"
+                          key={elem.id}
+                        >
+                          <Reviews comment={elem} />
+                        </SwiperSlide>
+                      );
+                    })}
+                  </Swiper>
+                </div>
+                <div className="lg:block hidden py-4">
                   <BlueLinkWithLeftArrow
                     text={`${DetailsSectionP.opinions.commentsCount} دیدگاه دیگر`}
                     size={"text-xs"}
@@ -318,9 +387,16 @@ const DetailsSection = () => {
           <div className="h-1 bg-gray-100"></div>
 
           <section className="" id="questions">
-            <TopicWithRedLine title={"پرسش‌ها"} />
+            <div className="flex justify-between items-center">
+              <div>
+                <TopicWithRedLine title={"پرسش‌ها"} />
+              </div>
+              <span className="block lg:hidden text-gray-500 text-xs">
+                {DetailsSectionP.opinions.qusetionsCount} پرسش
+              </span>
+            </div>
             <div className="flex gap-5">
-              <div className="flex flex-col gap-3 py-4 w-[260px]">
+              <div className="lg:flex hidden flex-col gap-3 py-4 w-[260px]">
                 <p className="text-gray-500 text-[11px]">
                   شما هم درباره این کالا پرسش ثبت کنید
                 </p>
@@ -329,7 +405,7 @@ const DetailsSection = () => {
                 </button>
               </div>
               <div className="flex-1">
-                <div className="flex justify-between text-xs py-4">
+                <div className="lg:flex hidden justify-between text-xs py-4">
                   <ul className="flex gap-3">
                     <li>
                       <Icon icon={sortAmountDesc} />
@@ -342,47 +418,140 @@ const DetailsSection = () => {
                     {DetailsSectionP.opinions.qusetionsCount} پرسش
                   </span>
                 </div>
-                {DetailsSectionP.questions.map((elem) => {
-                  return (<div className="border-b-2">
-                    <div className="border-b py-1">
-                      <div className="flex items-center gap-4">
-                        <Icon
-                          className="text-cyan-400"
-                          icon={ic_help_center_outline}
-                          size={25}
-                        />
-                        <p className="text-[15px] py-5">{elem.question}</p>
-                      
-                      </div>
-                      {elem.answer ? ( <>
-                        <div className="flex gap-4">
-                          <span className="text-[11px] text-gray-500 py-3">
-                            پاسخ{" "}
-                          </span>
-                          <div className="flex flex-col leading-loose py-3 gap-1">
-                            <span className="text-sm text-gray-600">{elem.answer.answer}</span>
-                            <span className="text-[11px] text-gray-400">
-                              <span>{elem.answer.user} </span>
-                              <span className="bg-green-100 text-green-800 py-[2px] px-2 rounded-xl">
-                                {elem.answer.tag}{" "}
-                              </span>
-                            </span>
+                <div className="">
+                  <div className="lg:block hidden">{DetailsSectionP.questions.map((elem) => {
+                    return (
+                      <>
+                        <div className="lg:block hidden border-b-2">
+                          <div className="border-b py-1">
+                            <div className="flex items-center gap-4">
+                              <Icon
+                                className="text-cyan-400"
+                                icon={ic_help_center_outline}
+                                size={25}
+                              />
+                              <p className="text-[15px] py-5">
+                                {elem.question}
+                              </p>
+                            </div>
+                            {elem.answer ? (
+                              <>
+                                <div className="flex gap-4">
+                                  <span className="text-[11px] text-gray-500 py-3">
+                                    پاسخ{" "}
+                                  </span>
+                                  <div className="flex flex-col leading-loose py-3 gap-1">
+                                    <span className="text-sm text-gray-600">
+                                      {elem.answer.answer}
+                                    </span>
+                                    <span className="text-[11px] text-gray-400">
+                                      <span>{elem.answer.user} </span>
+                                      <span className="bg-green-100 text-green-800 py-[2px] px-2 rounded-xl">
+                                        {elem.answer.tag}{" "}
+                                      </span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div className="flex justify-end items-center gap-2 text-gray-400">
+                                  <span className="text-xs pl-10">
+                                    آیا این پاسخ مفید بود؟
+                                  </span>
+                                  <span>{elem.answer.like}</span>
+                                  <Icon
+                                    className=""
+                                    icon={ic_thumb_up_outline}
+                                  />
+                                  <span>{elem.answer.dislike}</span>
+                                  <Icon icon={ic_thumb_down_outline} />
+                                </div>
+                              </>
+                            ) : null}
+                          </div>
+                          <div className="text-xs p-6">
+                            <BlueLinkWithLeftArrow text={"ثبت پاسخ"} />
                           </div>
                         </div>
-                        <div className="flex justify-end items-center gap-2 text-gray-400">
-                            <span className="text-xs pl-10">آیا این پاسخ مفید بود؟</span>
-                        <span>{elem.answer.like}</span>
-                        <Icon className="" icon={ic_thumb_up_outline} />
-                        <span>{elem.answer.dislike}</span>
-                        <Icon icon={ic_thumb_down_outline} />
-                        </div></>
-                      ) : null}
-                      </div>
-                      <div className="text-xs p-6"><BlueLinkWithLeftArrow text={"ثبت پاسخ"}/></div>
-                    </div>
-                  );
-                })}
-                <span className="py-2 block"><BlueLinkWithLeftArrow text={`${DetailsSectionP.opinions.qusetionsCount} پرسش دیگر`} size={"text-xs"}/></span>
+                      </>
+                    );
+                  })}</div>
+                  <div className="lg:hidden block bg-yellow-200">
+                    <Swiper
+                      slidesPerView={"auto"}
+                      spaceBetween={10}
+                      freeMode={true}
+                      navigation={true}
+                      modules={[FreeMode, Navigation]}
+                      className="mySwiper w-[400px] bg-blue-200"
+                    >
+                      {DetailsSectionP.questions.map((elem) => {
+                        return (
+                          <SwiperSlide
+                            className="!w-fit h-full py-4"
+                            id="redSwiper"
+                            key={elem.id}
+                          >
+                            <div className="w-[270px] border-b-2 bg-purple-300">
+                              <div className="border-b py-1">
+                                <div className="flex items-center gap-4">
+                                  <Icon
+                                    className="text-cyan-400"
+                                    icon={ic_help_center_outline}
+                                    size={25}
+                                  />
+                                  <p className="text-[15px] py-5">
+                                    {elem.question}
+                                  </p>
+                                </div>
+                                {elem.answer ? (
+                                  <>
+                                    <div className="flex gap-4">
+                                      <span className="text-[11px] text-gray-500 py-3">
+                                        پاسخ{" "}
+                                      </span>
+                                      <div className="flex flex-col leading-loose py-3 gap-1">
+                                        <span className="text-sm text-gray-600">
+                                          {elem.answer.answer}
+                                        </span>
+                                        <span className="text-[11px] text-gray-400">
+                                          <span>{elem.answer.user} </span>
+                                          <span className="bg-green-100 text-green-800 py-[2px] px-2 rounded-xl">
+                                            {elem.answer.tag}{" "}
+                                          </span>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <div className="flex justify-end items-center gap-2 text-gray-400">
+                                      <span className="text-xs pl-10">
+                                        آیا این پاسخ مفید بود؟
+                                      </span>
+                                      <span>{elem.answer.like}</span>
+                                      <Icon
+                                        className=""
+                                        icon={ic_thumb_up_outline}
+                                      />
+                                      <span>{elem.answer.dislike}</span>
+                                      <Icon icon={ic_thumb_down_outline} />
+                                    </div>
+                                  </>
+                                ) : null}
+                              </div>
+                              <div className="text-xs p-6">
+                                <BlueLinkWithLeftArrow text={"ثبت پاسخ"} />
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                        );
+                      })}
+                    </Swiper>
+                  </div>
+                  <span className="py-2 lg:block hidden">
+                    <BlueLinkWithLeftArrow
+                      text={`${DetailsSectionP.opinions.qusetionsCount} پرسش دیگر`}
+                      size={"text-xs"}
+                    />
+                  </span>
+                  <div className="h-2 bg-gray-100"></div>
+                </div>
               </div>
             </div>
           </section>

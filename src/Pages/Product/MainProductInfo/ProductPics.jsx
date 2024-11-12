@@ -11,7 +11,7 @@ const ProductPics = () => {
   return (
     <div className="flex flex-col">
         <div className="flex">
-          <div className="flex flex-col gap-2 text-gray-700">
+          <div className="lg:flex hidden flex-col gap-2 text-gray-700">
             <div className="">
               <Icon size={25} icon={heartOutline} />
             </div>
@@ -31,7 +31,7 @@ const ProductPics = () => {
               <Icon size={25} icon={ic_format_list_bulleted} />
             </div>
           </div>
-          <div>
+          <div className='lg:w-fit w-full lg:block flex justify-center'>
             <img
               className="xl:w-[400px] w-[300px]"
               src="https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"

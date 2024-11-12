@@ -16,14 +16,14 @@ const MainDetails = ({data}) => {
                 Activate
               </span>
             </div>
-            <div className="flex items-center text-xs gap-2">
+            <div className="flex items-center lg:text-xs text-[10px] gap-2">
               <Icon className="text-yellow-400" icon={androidStar} size={20} />
               <p className="text-gray-700">{"۴.۵"}</p>
               <p className="text-gray-400">{"(امتیاز ۸۹۷۷ خریدار)"}</p>
               <div className="lg:block hidden w-1 h-1 bg-slate-300 rounded-full"></div>
-              <p className="lg:text-cyan-400 lg:bg-transparent text-gray-800 bg-gray-200 p-1 rounded-xl flex">۸۲۲۴ دیدگاه<span className='lg:hidden block'><Icon icon={arrow_left}/></span></p>
+              <p className="lg:text-cyan-400 lg:bg-transparent text-gray-800 bg-gray-100 p-1 rounded-xl flex">۸۲۲۴ دیدگاه<span className='lg:hidden block'><Icon icon={arrow_left} size={15}/></span></p>
               <div className="lg:block hidden w-1 h-1 bg-slate-300 rounded-full"></div>
-              <p className="lg:text-cyan-400 lg:bg-transparent text-gray-800 bg-gray-200 p-1 rounded-xl flex">۲۸۸۶ پرسش<span className='lg:hidden block'><Icon icon={arrow_left}/></span></p>
+              <p className="lg:text-cyan-400 lg:bg-transparent text-gray-800 bg-gray-100 p-1 rounded-xl flex">۲۸۸۶ پرسش<span className='lg:hidden block'><Icon icon={arrow_left} size={15}/></span></p>
             </div>
             <div className="lg:hidden flex gap-2">
                 {data.features.map((elem)=>{

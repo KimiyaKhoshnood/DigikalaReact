@@ -43,7 +43,7 @@ const AmazingSuggestion = () => {
             </div>
             <a className="text-xs text-white" href="">مشاهده همه<Icon icon={ic_keyboard_arrow_left}/></a>
           </div>
-          <div className="h-full">
+          <div className="h-full px-1">
             <Swiper
               slidesPerView={"auto"}
               spaceBetween={3}
@@ -51,7 +51,7 @@ const AmazingSuggestion = () => {
               modules={[Navigation]}
               className="mySwiper h-full lg:pl-5 pl-4 lg:pr-0 pr-4"
             >
-              <SwiperSlide className="!w-[160px] h-full lg:block hidden">
+              <SwiperSlide className="!w-[160px] h-full lg:!block !hidden">
                 <a href="" className="flex flex-col items-center justify-between h-full py-3">
                   <img className="w-[88px] h-[88px]" src="https://www.digikala.com/statics/img/svg/specialCarousel/Amazings.svg" alt="" />
                   <div className="flex gap-1 justify-center">

@@ -31,13 +31,12 @@ const SellSelection = () => {
             </div>
             <div className="grid xl:grid-cols-6 lg:grid-cols-5 grid-cols-2 divide-x divide-x-reverse divide-y">
                 {SellSelectionP.map((elem)=> {
-                    return <div key={elem.id} className="flex flex-col items-center p-3">
+                    return <div key={elem.id} className="flex flex-col items-center p-3 ">
                         <div className="py-2">
                             <img className="h-[150px]" src={elem.img} alt="" />
                         </div>
                         <div className="flex justify-between items-center w-full">
                             <OffPercent off={elem.offPercent} />
-                            {/* <span className="flex gap-1">{elem.offPrice} <img className="w-5 h-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAjW86KHVtGKOts1_vzW0oM03BOSx5djx5Q&s" alt="" /></span> */}
                             <PriceWithToman  price={elem.offPrice} textSize={"text-md"} />
 
                         </div>
