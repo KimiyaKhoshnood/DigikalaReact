@@ -78,16 +78,14 @@ const Header = () => {
     },
   };
 
-  const { posts, loading, error } = useSelector((state) => state.posts);
+  const { home, loading, error } = useSelector((state) => state.home);
   const dispatch = useDispatch();
   useEffect(() => {
     setTimeout(() => {
-      dispatch(fetchPost("NavbarItemsP"));
+      dispatch(fetchPost());
     }, 1000);
-    // dispatch(fetchPost("NavbarItemsP"));
   }, []);
 
-  // console.log("NavbarItemsP", posts);
 
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -99,12 +97,6 @@ const Header = () => {
     window.addEventListener("resize", updateWindowDimensions);
     return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
-
-  if (loading) {
-    console.log(loading);
-    
-    return <div className="text-xl">loading</div>
-  }
 
   return (
     <header className="sticky top-0 z-20 bg-white">
@@ -183,14 +175,14 @@ const Header = () => {
           />
         </div>
       </div>
-      <nav className="h-[40px] lg:flex hidden justify-between px-2">
+      {home?<nav className="h-[40px] lg:flex hidden justify-between px-2">
         <div className="flex gap-2">
           <div className="border-b-2 border-b-transparent hover:border-b-red-500 transition-all duration-300 ease-linear origin-right">
             <NavbarItems
               icon={NavbarItemsP?.productSorting.icon}
-              text={posts?.productSorting.text}
+              text={home?.NavbarItemsP.productSorting.text}
               size={"text-md"}
-              color={posts?.productSorting.color}
+              color={home?.NavbarItemsP.productSorting.color}
             />
           </div>
           <div className="text-gray-300 mt-2">|</div>
@@ -215,7 +207,7 @@ const Header = () => {
           </div>
           <div className="text-gray-300 mt-2">|</div>
           <div className="flex">
-            {posts?.digikalaQuestionsNavbar.map((elem, index) => {
+            {home?.NavbarItemsP.digikalaQuestionsNavbar.map((elem, index) => {
               return (
                 <div
                   key={index}
@@ -235,12 +227,12 @@ const Header = () => {
         <div>
           <NavbarItems
             icon={NavbarItemsP?.locationNavbar.icon}
-            text={posts?.locationNavbar.text}
+            text={home?.NavbarItemsP.locationNavbar.text}
             size={"text-xs"}
             color={"text-gray-800"}
           />
         </div>
-      </nav>
+      </nav>:null}
       <hr />
     </header>
   );

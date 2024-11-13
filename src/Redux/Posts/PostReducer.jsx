@@ -1,9 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchPost = createAsyncThunk(`{posts}/fetch`, async (endpoint) => {
+export const fetchPost = createAsyncThunk(`home/fetch`, async () => {
   try {
-    const res = await axios.get(`http://localhost:3004/${endpoint}`)
+    const res = await axios.get(`http://localhost:3004/home`)
     return res.data;
   } catch (error) {
     console.log(error.message);
@@ -12,9 +12,9 @@ export const fetchPost = createAsyncThunk(`{posts}/fetch`, async (endpoint) => {
 });
 
 const PostReducer = createSlice({
-  name: `{posts}`,
+  name: `home`,
   initialState: {
-    posts: null,
+    home: null,
     loading: true,
     error: "",
   },
@@ -24,8 +24,8 @@ const PostReducer = createSlice({
         state.loading = false;
         {
           typeof action.payload == "string"
-            ? (state.posts == null, (state.error = action.payload))
-            : (state.posts = action.payload);
+            ? (state.home == null, (state.error = action.payload))
+            : (state.home = action.payload);
         }
       })
       .addCase(fetchPost.pending, (state, action) => {
@@ -33,7 +33,7 @@ const PostReducer = createSlice({
       })
       .addCase(fetchPost.rejected, (state) => {
         state.loading = false;
-        state.error = "error fetching posts!";
+        state.error = "error fetching home!";
       });
   },
 });

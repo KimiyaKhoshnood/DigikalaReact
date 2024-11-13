@@ -1,4 +1,4 @@
-import HighlightItems from "./HighlightItems/HighlightItems";
+import HighlightItems from "./HighlightItems";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,64 +10,19 @@ import "swiper/css/scrollbar";
 // import required modules
 import { FreeMode, Scrollbar } from "swiper/modules";
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchPost } from "../../../Redux/Posts/PostReducer";
+import Skeleton from "react-loading-skeleton";
 
 const Highlights = () => {
-  let HighlightItemsP = [
-    {
-      text: "دریافت وام",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/ac127167132653d14c758748b07824a6a7643a31_1708971047.png",
-      id: 1
-    },
-    {
-      text: "حراج سر ماه",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/4bb0b7006012e541a6a4002242d1bfe863296e4f_1713545982.png",
-        id: 2
-    },
-    {
-      text: "موبایل کارکرده",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/d0dc0edf879e963e9cff31fd57b3f101743ddac8_1707297619.png",
-        id: 3
-    },
-    {
-      text: "تضمین قیمت",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/30d277e628e20f49240182a175c652b4089a432e_1726953717.png",
-        id: 4
-    },
-    {
-      text: "بهترین فروشندگان",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/3c2781506d2802d8e2d33c50a85e128d7607271c_1716821355.png",
-        id: 5
-    },
-    {
-      text: "بازگشت به مدرسه",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/987f905df337a78bad4da4d17b6eb20f5dc9add5_1725719411.png",
-        id: 6
-    },
-    {
-      text: "سوپرمارکت پرتخفیف",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/afb3c938fd3149d7587b59919bfc500a461693a6_1709571657.png",
-        id: 7
-    },
-    {
-      text: "فروش ویژه بومی و محلی",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/ac51190dfa370d1586a46f25df98b576796b59be_1725717002.png",
-        id: 8
-    },
-    {
-      text: "تخفیف دیجی‌پلاس",
-      image:
-        "https://dkstatics-public.digikala.com/digikala-bellatrix/5ffcb21457fb598a397c1c5daa18ef173fc1eed6_1709438704.png",
-        id: 9
-    },
-  ];
+
+  const { home, loading, error } = useSelector((state) => state.home);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(fetchPost());
+    }, 1000);
+  }, []);
 
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -97,19 +52,31 @@ const Highlights = () => {
             freeMode={true}
             scrollbar={{clickable: true}}
             modules={[FreeMode, Scrollbar]}
-            className="mySwiper w-full"
+            className="mySwiper !w-full lg:grid lg:grid-cols-10"
           >
-            {HighlightItemsP.map((elem, index) => {
+            {home?.HighlightItemsP.map((elem, index) => {
               return (
-                <SwiperSlide key={index} className="h-full !w-fit flex justify-center">
+                <SwiperSlide key={index} className="h-full w-fit">
                   <HighlightItems text={elem.text} image={elem.image} key={elem.id}/>
                 </SwiperSlide>
               );
             })}
 
-          <SwiperSlide className="h-full w-fit flex justify-center">
+            {home && <SwiperSlide className="h-full w-fit">
                   <HighlightItems text={"بیشتر"} image={""} key={10}/>
-                </SwiperSlide>
+            </SwiperSlide>}
+            {
+              loading && Array(10).fill(0).map((elem, index) => {
+                return (
+                  <SwiperSlide key={index} className="h-full w-fit">
+                    <div className="flex gap-2 flex-col items-center">
+                      <Skeleton width={52} height={52} borderRadius={10}/>
+                      <Skeleton width={60}/>
+                    </div>
+                  </SwiperSlide>
+                );
+              })
+            }
           </Swiper>
         </div>
       </div>

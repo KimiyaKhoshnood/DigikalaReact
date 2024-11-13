@@ -9,26 +9,39 @@ import Icon from "react-icons-kit";
 
 import {ic_keyboard_arrow_left} from 'react-icons-kit/md/ic_keyboard_arrow_left'
 import {arrowLeft} from 'react-icons-kit/feather/arrowLeft'
+import Skeleton from "react-loading-skeleton";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { fetchPost } from "../../../Redux/Posts/PostReducer";
 
 const AmazingSuggestion = () => {
-    let AmazingSuggestionP = [
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-        {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-    ]
+    // let AmazingSuggestionP = [
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
+    //     {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
+    // ]
+
+    const { home, loading, error } = useSelector((state) => state.home);
+    const dispatch = useDispatch();
+    useEffect(() => {
+      setTimeout(() => {
+        dispatch(fetchPost());
+      }, 1000);
+    }, []);
+
   return (
     <>
       <div className="w-full flex justify-center py-2 lg:px-4">
-        <div className="max-w-[1336px] w-full bg-gradient-to-bl from-[#d22c4e] via-[#ee384e] to-[#ef5662] lg:rounded-2xl h-[300px] py-[20px] flex flex-col gap-4">
+        <div className={`max-w-[1336px] w-full ${loading?"bg-gray-100":"bg-gradient-to-bl from-[#d22c4e] via-[#ee384e] to-[#ef5662]"} lg:rounded-2xl h-[300px] py-[20px] flex flex-col gap-4`}>
           <div className="lg:hidden flex justify-between px-4 items-center">
             <div className="flex items-center gap-2">
                 <img className="w-[24px] h-[25px]" src="https://www.digikala.com/statics/img/svg/specialCarousel/Amazing.svg" alt="" />
@@ -52,7 +65,7 @@ const AmazingSuggestion = () => {
               className="mySwiper h-full lg:pl-5 pl-4 lg:pr-0 pr-4"
             >
               <SwiperSlide className="!w-[160px] h-full lg:!block !hidden">
-                <a href="" className="flex flex-col items-center justify-between h-full py-3">
+                {home && <a href="" className="flex flex-col items-center justify-between h-full py-3">
                   <img className="w-[88px] h-[88px]" src="https://www.digikala.com/statics/img/svg/specialCarousel/Amazings.svg" alt="" />
                   <div className="flex gap-1 justify-center">
                     <span className="flex justify-center items-center text-sm w-[26px] h-[26px] bg-white rounded-md">01</span>
@@ -63,9 +76,14 @@ const AmazingSuggestion = () => {
                   </div>
                   <img className="w-[80px] h-[80px]" src="https://www.digikala.com/statics/img/svg/specialCarousel/Amazing.svg" alt="" />
                   <div className="text-xs text-white flex justify-center items-center">مشاهده همه <Icon icon={ic_keyboard_arrow_left}/></div>
-                </a>
+                </a>}
+                {loading && 
+                <div className="flex flex-col justify-center items-center h-full">
+                  <Skeleton width={88} count={3}/>
+                  <Skeleton width={95} height={95}/>
+                </div>}
               </SwiperSlide>
-              {AmazingSuggestionP.map((elem) => {
+              {home?.AmazingSuggestionP.map((elem) => {
                 return (
                   <SwiperSlide className="!w-fit h-full bg-white" id="redSwiper" key={elem.id}>
                     <AmazingSuggestionItems
@@ -75,6 +93,16 @@ const AmazingSuggestion = () => {
                       newPrice={elem.newPrice}
                       off={elem.off}
                     />
+                  </SwiperSlide>
+                );
+              })}
+              {Array(10).fill(0).map((elem) => {
+                return (
+                  <SwiperSlide className="!w-fit h-full bg-white" id="redSwiper" key={elem.id}>
+                    <Skeleton width={132} height={132} />
+                    <div className="flex"><Skeleton width={10}/><Skeleton /></div>
+                    <Skeleton/>
+                    <Skeleton/>
                   </SwiperSlide>
                 );
               })}

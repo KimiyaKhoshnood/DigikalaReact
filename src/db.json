@@ -1,50 +1,308 @@
 {
-    "NavbarItemsP" : {
-        "productSorting": { "text": "دسته‌بندی کالاها", "icon": "bars", "id": 1 },
-        "digikalaPagesNavbar": [
-          {
-            "text": "شگفت‌انگیزها",
-            "icon": "bars",
-            "id": 2
-          },
-          {
-            "text": "سوپرمارکت",
-            "icon": "basket",
-            "id": 3
-          },
-          {
-            "text": "کارت هدیه",
-            "icon": "percent",
-            "id": 4
-          },
-          {
-            "text": "پرفروش‌ترین‌ها",
-            "icon": "ic_local_fire_department",
-            "id": 5
-          },
-          {
-            "text": "تخفیف‌ها و پیشنهادها",
-            "icon": "tags",
-            "id": 6
-          }
-        ],
-        "digikalaQuestionsNavbar": [
-          { "text": "سوالی دارید؟", "id": 7 },
-          {
-            "text": "در دیجی‌کالا بفروشید!",
-            "id": 8
-          }
-        ],
-        "locationNavbar": { "text": "لطفا شهر خود را انتخاب کنید", "icon": "location" }
+  "home": {
+    "NavbarItemsP": {
+      "productSorting": { "text": "دسته‌بندی کالاها", "icon": "bars", "id": 1 },
+      "digikalaPagesNavbar": [
+        {
+          "text": "شگفت‌انگیزها",
+          "icon": "bars",
+          "id": 2
+        },
+        {
+          "text": "سوپرمارکت",
+          "icon": "basket",
+          "id": 3
+        },
+        {
+          "text": "کارت هدیه",
+          "icon": "percent",
+          "id": 4
+        },
+        {
+          "text": "پرفروش‌ترین‌ها",
+          "icon": "ic_local_fire_department",
+          "id": 5
+        },
+        {
+          "text": "تخفیف‌ها و پیشنهادها",
+          "icon": "tags",
+          "id": 6
+        }
+      ],
+      "digikalaQuestionsNavbar": [
+        { "text": "سوالی دارید؟", "id": 7 },
+        {
+          "text": "در دیجی‌کالا بفروشید!",
+          "id": 8
+        }
+      ],
+      "locationNavbar": {
+        "text": "لطفا شهر خود را انتخاب کنید",
+        "icon": "location"
+      }
+    },
+    "UserStoriesP": [
+      {
+        "text": "مزایا و معایب PS4",
+        "status": "زنده",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 1
       },
-    "FourPicItemsP" : [
-        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/5e124f3f520c85b07b264c293397d04a55afe2ef_1727683322.jpg?x-oss-process=image/quality,q_95/format,webp", "id":1},
-        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/56651058c7fb5c844ad73adc1ed899ecd604c57f_1727679080.jpg?x-oss-process=image/quality,q_95/format,webp", "id":2},
-        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/acbbeeae46b4a432951190982daf31b64a7bd612_1727168918.jpg?x-oss-process=image/quality,q_95/format,webp", "id":3},
-        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/f0d3ab9abc4b8700de602ca65bdf6863c87d78c6_1727518426.jpg?x-oss-process=image/quality,q_95/format,webp", "id":4}
+      {
+        "text": "مزایا و معایب PS4",
+        "status": "۱۶:۰۰",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 2
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "status": "۱۷:۰۰",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 3
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 4
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 5
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 6
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 7
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 8
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 9
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 10
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 11
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 12
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 13
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 14
+      },
+      {
+        "text": "مزایا و معایب PS4",
+        "img": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/4c17c08d96107f04e1c9eca7fc6b729c4a0c33b5_1725824033.jpg?x-oss-process=image/resize,m_fill,h_115,w_115",
+        "id": 15
+      }
+    ],
+    "MainSwiperImagesP": [
+      {
+        "imageLg": "https://dkstatics-public.digikala.com/digikala-adservice-banners/5c68ad28e6244d3b5e394d259531d155efcb2011_1726951250.jpg?x-oss-process=image/quality,q_95",
+        "imageSm": "https://dkstatics-public.digikala.com/digikala-adservice-banners/a6ea213652700c1a6107e2aea06c3fb8cf69402b_1731164703.gif?x-oss-process=image?x-oss-process=image/format,webp",
+        "id": 1
+      },
+      {
+        "imageLg": "https://dkstatics-public.digikala.com/digikala-adservice-banners/5c68ad28e6244d3b5e394d259531d155efcb2011_1726951250.jpg?x-oss-process=image/quality,q_95",
+        "imageSm": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1b06e1c376389df8ac34b6b5c5378abe5980088b_1731141880.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "id": 2
+      },
+      {
+        "imageLg": "https://dkstatics-public.digikala.com/digikala-adservice-banners/5c68ad28e6244d3b5e394d259531d155efcb2011_1726951250.jpg?x-oss-process=image/quality,q_95",
+        "imageSm": "https://dkstatics-public.digikala.com/digikala-adservice-banners/a6ea213652700c1a6107e2aea06c3fb8cf69402b_1731164703.gif?x-oss-process=image?x-oss-process=image/format,webp",
+        "id": 3
+      },
+      {
+        "imageLg": "https://dkstatics-public.digikala.com/digikala-adservice-banners/5c68ad28e6244d3b5e394d259531d155efcb2011_1726951250.jpg?x-oss-process=image/quality,q_95",
+        "imageSm": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1b06e1c376389df8ac34b6b5c5378abe5980088b_1731141880.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "id": 4
+      }
+    ],
+    "HighlightItemsP": [
+      {
+        "text": "دریافت وام",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/ac127167132653d14c758748b07824a6a7643a31_1708971047.png",
+        "id": 1
+      },
+      {
+        "text": "حراج سر ماه",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/4bb0b7006012e541a6a4002242d1bfe863296e4f_1713545982.png",
+        "id": 2
+      },
+      {
+        "text": "موبایل کارکرده",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/d0dc0edf879e963e9cff31fd57b3f101743ddac8_1707297619.png",
+        "id": 3
+      },
+      {
+        "text": "تضمین قیمت",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/30d277e628e20f49240182a175c652b4089a432e_1726953717.png",
+        "id": 4
+      },
+      {
+        "text": "بهترین فروشندگان",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/3c2781506d2802d8e2d33c50a85e128d7607271c_1716821355.png",
+        "id": 5
+      },
+      {
+        "text": "بازگشت به مدرسه",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/987f905df337a78bad4da4d17b6eb20f5dc9add5_1725719411.png",
+        "id": 6
+      },
+      {
+        "text": "سوپرمارکت پرتخفیف",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/afb3c938fd3149d7587b59919bfc500a461693a6_1709571657.png",
+        "id": 7
+      },
+      {
+        "text": "فروش ویژه بومی و محلی",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/ac51190dfa370d1586a46f25df98b576796b59be_1725717002.png",
+        "id": 8
+      },
+      {
+        "text": "تخفیف دیجی‌پلاس",
+        "image": "https://dkstatics-public.digikala.com/digikala-bellatrix/5ffcb21457fb598a397c1c5daa18ef173fc1eed6_1709438704.png",
+        "id": 9
+      }
+    ],
+    "AmazingSuggestionP": [
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      }
+    ],
+    "FourPicItemsP": [
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/5e124f3f520c85b07b264c293397d04a55afe2ef_1727683322.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "id": 1
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/56651058c7fb5c844ad73adc1ed899ecd604c57f_1727679080.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "id": 2
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/acbbeeae46b4a432951190982daf31b64a7bd612_1727168918.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "id": 3
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/f0d3ab9abc4b8700de602ca65bdf6863c87d78c6_1727518426.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "id": 4
+      }
     ],
     "TwoPicItemsP": [
-        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/40975c427842b45947d76c6590913d0b69a31818_1727268635.jpg?x-oss-process=image/quality,q_95/format,webp", "id":1},
-        {"image":"https://dkstatics-public.digikala.com/digikala-adservice-banners/f111c8fbbecc9e2d7242264451ec8d806c35c6d9_1727706944.gif?x-oss-process=image?x-oss-process=image/format,webp", "id":2}
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/40975c427842b45947d76c6590913d0b69a31818_1727268635.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "id": 1
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/f111c8fbbecc9e2d7242264451ec8d806c35c6d9_1727706944.gif?x-oss-process=image?x-oss-process=image/format,webp",
+        "id": 2
+      }
     ]
+  }
 }
