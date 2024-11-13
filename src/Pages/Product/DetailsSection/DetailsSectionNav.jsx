@@ -23,8 +23,8 @@ const DetailsSectionNav = () => {
     // };
 
   return (
-    <>
-    <nav className="">
+    <div className="sticky lg:top-[169px] top-[136px] bg-white">
+    <nav>
         <ul className="flex justify-evenly text-xs text-gray-600 lg:w-fit w-full border-transparent sticky z-50">
             <li className="p-2 border-b-4 border-rose-500 lg:w-fit flex-1 text-center text-nowrap border-transparent"><a href="#introduction">معرفی</a></li>
             <li className="p-2 border-b-4 lg:w-fit flex-1 text-center text-nowrap border-transparent"><a href="#introduction">بررسی تخصصی</a></li>
@@ -42,7 +42,7 @@ const DetailsSectionNav = () => {
         <section className="pb-96 bg-gray-100" id="opinions">opinions</section>
         <section className="pb-96 bg-pink-100" id="questions">questions</section>
     </div> */}
-    </>
+    </div>
   )
 }
 

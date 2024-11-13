@@ -1,4 +1,4 @@
-import OffPercent from "../../../../Components/OffPercent/OffPercent";
+import OffPercent from "../../../Components/OffPercent/OffPercent";
 
 const ASupermarketItems = ({image, off}) => {
     return ( 

@@ -78,7 +78,7 @@ const AmazingSuggestion = () => {
                   <div className="text-xs text-white flex justify-center items-center">مشاهده همه <Icon icon={ic_keyboard_arrow_left}/></div>
                 </a>}
                 {loading && 
-                <div className="flex flex-col justify-center items-center h-full">
+                <div className="flex flex-col gap-5 justify-center items-center h-full">
                   <Skeleton width={88} count={3}/>
                   <Skeleton width={95} height={95}/>
                 </div>}
@@ -96,24 +96,24 @@ const AmazingSuggestion = () => {
                   </SwiperSlide>
                 );
               })}
-              {Array(10).fill(0).map((elem) => {
+              {loading && Array(10).fill(0).map((elem) => {
                 return (
-                  <SwiperSlide className="!w-fit h-full bg-white" id="redSwiper" key={elem.id}>
+                  <SwiperSlide className="!w-fit h-full bg-white px-3 py-4" id="redSwiper" key={elem.id}>
                     <Skeleton width={132} height={132} />
-                    <div className="flex"><Skeleton width={10}/><Skeleton /></div>
-                    <Skeleton/>
-                    <Skeleton/>
+                    <div className="flex justify-between pt-2"><Skeleton width={30}/><Skeleton width={70}/></div>
+                    <div className="text-left"><Skeleton width={40} height={10}/></div>
+                    <Skeleton height={5}/>
                   </SwiperSlide>
                 );
               })}
-              <SwiperSlide className="lg:w-[160px] !w-[130px] h-full ml-3">
+              {home && <SwiperSlide className="lg:w-[160px] !w-[130px] h-full ml-3">
                 <a href="" className="flex flex-col items-center gap-2 justify-center h-full bg-white rounded-l-[10px]">
                     <div className="w-[50px] h-[50px] flex justify-center items-center outline outline-[#19bfd3] outline-2 rounded-full">
                         <Icon className="text-[#19bfd3]" icon={arrowLeft} size={30}/>
                     </div>
                     <span className="text-gray-800 text-sm">مشاهده همه</span>
                 </a>
-              </SwiperSlide>
+              </SwiperSlide>}
             </Swiper>
           </div>
         </div>

@@ -1,30 +1,19 @@
 import Icon from 'react-icons-kit';
 import {arrowLeft} from 'react-icons-kit/feather/arrowLeft'
-import ASupermarketItems from './ASupermarketItems/ASupermarketItems';
+import ASupermarketItems from './ASupermarketItems';
 import { useEffect, useState } from 'react';
+import Skeleton from 'react-loading-skeleton';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchPost } from '../../../Redux/Posts/PostReducer';
 
 const AmazingSupermarket = () => {
-  let ASupermarketItemsP = [
-    {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":1},
-    {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":2},
-    {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":3},
-    {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":4},
-    {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":5},
-    {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":6},
-  ]
 
-  const [width, setWidth] = useState(window.innerWidth);
-
+  const { home, loading, error } = useSelector((state) => state.home);
+  const dispatch = useDispatch();
   useEffect(() => {
-    const updateWindowDimensions = () => {
-      const newWidth = window.innerWidth;
-      setWidth(newWidth);
-    };
-
-    window.addEventListener("resize", updateWindowDimensions);
-
-    return () => window.removeEventListener("resize", updateWindowDimensions) 
-
+    setTimeout(() => {
+      dispatch(fetchPost());
+    }, 1000);
   }, []);
 
 
@@ -43,7 +32,7 @@ const AmazingSupermarket = () => {
           <div className="flex items-center justify-between gap-2">
             <div className='flex gap-2'>
                 {
-                  ASupermarketItemsP.map((elem, i)=>{
+                  home?.ASupermarketItemsP.map((elem, i)=>{
                     return( ((window.innerWidth>= 1227) && (i<6) && <ASupermarketItems image={elem.image} off={elem.off} key={elem.id}/>) 
                     || ((window.innerWidth< 1227 && window.innerWidth>= 1145) && (i<5) && <ASupermarketItems image={elem.image} off={elem.off} key={elem.id}/>)
                     || ((window.innerWidth< 1227 && window.innerWidth>= 1065) && (i<4) && <ASupermarketItems image={elem.image} off={elem.off} key={elem.id}/>)

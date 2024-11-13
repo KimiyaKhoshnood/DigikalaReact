@@ -7,107 +7,18 @@ import "swiper/css/navigation";
 
 // import required modules
 import { FreeMode, Navigation } from "swiper/modules";
-import BuyBySortingItems from "./BuyBySortingItems/BuyBySortingItems";
+import BuyBySortingItems from "./BuyBySortingItems";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { fetchPost } from "../../../Redux/Posts/PostReducer";
 
 const BuyBySorting = () => {
-  let BuyBySortingItemsP = [
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "موبایل",
-      id: 1,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "کالای دیجیتال",
-      id: 2,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "کتاب، لوازم تحریر و هنر",
-      id: 3,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 4,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 5,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 6,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 7,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 8,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 9,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 10,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 11,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 12,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 13,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 14,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 15,
-    },
-    {
-      image:
-        "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      text: "خانه و آشپزخانه",
-      id: 16,
-    },
-  ];
+  const { home, loading, error } = useSelector((state) => state.home);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchPost());
+  }, []);
+  
   return (
     <>
       <div className="w-full flex justify-center py-5">
@@ -124,7 +35,7 @@ const BuyBySorting = () => {
             >
               <SwiperSlide className="h-full lg:min-w-full !w-fit">
                 <div className="lg:grid-rows-2 lg:w-full lg:gap-x-[10px] sm:gap-x-[50px] gap-x-[0px] grid grid-flow-col grid-rows-3 w-fit sm:px-8 sm:py-0 p-1">
-                  {BuyBySortingItemsP.map((elem) => {
+                  {home?.BuyBySortingItemsP.map((elem) => {
                     return (
                       <BuyBySortingItems
                         text={elem.text}

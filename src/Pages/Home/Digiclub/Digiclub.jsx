@@ -8,11 +8,29 @@ import { useEffect } from "react";
 import { fetchPost } from "../../../Redux/Posts/PostReducer";
 
 const Digiclub = () => {
-    // const {posts, loading, error} = useSelector((state)=>state.posts)
-    // const dispatch = useDispatch()
-    // useEffect(()=>{
-    //     dispatch(fetchPost())
-    // },[])
+    const Digiclub = [
+        {
+            "title": "چرخ و بخت",
+            "icon": "ribbonB",
+            "image": "https://www.digikala.com/statics/img/png/digiclub/wheel-spinner.webp",
+            "id": 1
+        },{
+            "title": "ماموریت ها",
+            "icon": "map",
+            "image": "https://www.digikala.com/statics/img/png/digiclub/wheel-spinner.webp",
+            "id": 2
+        },{
+            "title": "جایزه ها",
+            "icon": "ribbonB",
+            "image": "https://www.digikala.com/statics/img/png/digiclub/wheel-spinner.webp",
+            "id": 3
+        }
+    ]
+    const {home, loading, error} = useSelector((state)=>state.home)
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch(fetchPost())
+    },[])
     return ( 
         <>
         <div className="flex justify-center lg:p-4 py-4">

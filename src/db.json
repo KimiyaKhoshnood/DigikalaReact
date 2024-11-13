@@ -276,6 +276,14 @@
         "off": "۵۹"
       }
     ],
+    "ASupermarketItemsP" : [
+      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":1},
+      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":2},
+      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":3},
+      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":4},
+      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":5},
+      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":6}
+    ],
     "FourPicItemsP": [
       {
         "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/5e124f3f520c85b07b264c293397d04a55afe2ef_1727683322.jpg?x-oss-process=image/quality,q_95/format,webp",
@@ -294,6 +302,104 @@
         "id": 4
       }
     ],
+    "BuyBySortingItemsP" : [
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "موبایل",
+        "id": 1
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "کالای دیجیتال",
+        "id": 2
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "کتاب، لوازم تحریر و هنر",
+        "id": 3
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 4
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 5
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 6
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 7
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 8
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 9
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 10
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 11
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 12
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 13
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 14
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 15
+      },
+      {
+        "image":
+          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "text": "خانه و آشپزخانه",
+        "id": 16
+      }
+    ],
     "TwoPicItemsP": [
       {
         "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/40975c427842b45947d76c6590913d0b69a31818_1727268635.jpg?x-oss-process=image/quality,q_95/format,webp",
@@ -302,6 +408,73 @@
       {
         "image": "https://dkstatics-public.digikala.com/digikala-adservice-banners/f111c8fbbecc9e2d7242264451ec8d806c35c6d9_1727706944.gif?x-oss-process=image?x-oss-process=image/format,webp",
         "id": 2
+      }
+    ],
+    "YourIntrestP" : [
+      {
+          "title":"کیف و کاور گوشی",
+          "images":[{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/3e522d7132d2bb4c3f83321f5ce3070919e4cd88_1729977913.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "id":1
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/c0d977d18cf58b033a8346934cce80b1cfaab572_1722884842.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "id":2
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/8e7b84f5ba25a79673b2814e2aead169a54f97a6_1673976012.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "id":3
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/56ad80d1b7c45780578989b1aaea6413b9d7372c_1615464898.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "id":4
+          }],
+          "id":1
+      },{
+          "title":"گوشی موبایل",
+          "images":[{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/d4e2b4df5348faef2b375081baf57c378d6b865a_1721741880.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "id":1
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "id":2
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "id":3
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/82229ebb4fbe465f907c7078e0542139d865b2d8_1721401058.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "id":4
+          }],
+          "id":2
+      },{
+          "title":"هدفون، هدست و هندزفری",
+          "images":[{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "id":1
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "id":2
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "id":3
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "id":4
+          }],
+          "id":3
+      },{
+          "title":"ساعت هوشمند",
+          "images":[{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "id":1
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "id":2
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "id":3
+          },{
+              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "id":4
+          }],
+          "id":4
       }
     ]
   }
