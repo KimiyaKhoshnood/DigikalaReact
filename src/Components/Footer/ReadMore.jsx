@@ -2,6 +2,8 @@ import { useState } from "react";
 import BlueLinkWithLeftArrow from "../BlueLinkWithLeftArrow/BlueLinkWithLeftArrow";
 
 const ReadMore = ({ info, titleSize, infoSize }) => {
+  console.log("info: ", info);
+  
   const [readMore, setReadMore] = useState(false);
   const [readMoreBtn, setReadMoreBtn] = useState("مشاهده بیشتر");
 
@@ -20,7 +22,7 @@ const ReadMore = ({ info, titleSize, infoSize }) => {
         </h1>
         <div id={readMore ? "" : "textOpacity"}>
           {readMore ? (
-            info.map((elem) => {
+            info?.map((elem) => {
               return (
                 <p className={`${infoSize} text-gray-500 leading-loose`}>
                   {elem}
@@ -31,9 +33,9 @@ const ReadMore = ({ info, titleSize, infoSize }) => {
             <p
               className={`${infoSize} text-gray-500 leading-loose line-clamp-3`}
             >
-              {info[0]}
+              {info && info[0]}
               <br />
-              {info[1]}
+              {info && info[1]}
             </p>
           )}
         </div>
