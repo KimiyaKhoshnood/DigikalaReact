@@ -24,7 +24,7 @@ const EachSeller = ({data}) => {
             </div>
           </div>
           <div className="flex text-xs items-center">
-            {data.days > 0 ? (
+            {data?.days > 0 ? (
               <p className="text-gray-500">
                 <Icon className="text-gray-700" icon={u1F69A} size={25} />
                 ارسال دیجی‌کالا از {"۱"} روز کاری دیگر
@@ -39,7 +39,7 @@ const EachSeller = ({data}) => {
               </div>
             )}
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center gap-2 text-gray-700">
             <Icon icon={ic_verified_user_outline} size={25} />
             <p className="text-sm">{data.guarantee}</p>
           </div>
@@ -51,7 +51,7 @@ const EachSeller = ({data}) => {
           </button>
         </div>
       </div>
-      {data.plusService && (
+      {data?.plusService && (
         <div className="text-xs bg-gradient-to-l from-pink-100 to-transparent max-w-[400px] p-2 rounded-lg mr-10">
           <span className="text-purple-600 font-bold">
             <Icon icon={u2734} size={20} />

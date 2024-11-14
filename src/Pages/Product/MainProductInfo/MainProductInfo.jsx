@@ -21,17 +21,20 @@ import PriceWithToman from "../../../Components/PriceWithToman/PriceWithToman";
 import LeftGrayBox from "./LeftGrayBox";
 import ProductPics from "./ProductPics";
 import MainDetails from "./MainDetails";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProduct } from "../../../Redux/Posts/ProductReducer";
+import { useEffect } from "react";
 
 
 const MainProductInfo = () => {
-  const MainProductInfoP = {
-    "features": [
-        {"title": "فناوری صفحه‌ نمایش", "detail": "Super Retina XDR OLED", "id":1 },
-        {"title": "نسخه سیستم عامل", "detail": "iOS 15", "id":2 },
-        {"title": "رزولوشن دوربین اصلی", "detail": "12 مگاپیکسل", "id":3 },
-        {"title": "اندازه", "detail": "6.1", "id":4 },
-    ]
-  }
+  const { product, loading, error } = useSelector((state) => state.product);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(fetchProduct());
+    }, 1000);
+  }, []);
+
   return (
     <div className="lg:p-4 w-full max-w-[1676px] flex lg:flex-row flex-col">
       <ProductPics />
@@ -42,46 +45,14 @@ const MainProductInfo = () => {
           </div>
           <h1 className="text-lg leading-loose pb-3">
             <strong>
-              گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و
-              رم 4 گیگابایت - نات اکتیو
+              {product?.productName}
             </strong>
           </h1>
         </div>
         <div className="flex lg:flex-row flex-col gap-4">
-          <MainDetails data={MainProductInfoP}/>
+          <MainDetails data={product}/>
           <div className='lg:hidden block w-full h-1 bg-gray-100'></div>
-          <LeftGrayBox />
-          {/* <div className="lg:hidden flex flex-col gap-2 bg-gray-100 p-4">
-            <div className="bg-white lg:hidden flex rounded-lg items-center justify-between px-4">
-                <span className="text-sm">ارسال رایگان برای این کالا</span>
-                <div><img className="h-[60px]" src="https://www.digikala.com/_next/static/media/normalFreeShippingTouchPointImage.d4416515.svg" alt="" /></div>
-            </div>
-            <div className="bg-white rounded-lg p-4">
-                <div className="flex justify-between text-sm pb-3">
-                    <div className="flex items-center gap-2">
-                        <div className="bg-blue-800 w-4 h-4"></div>
-                        <span className="text-sm">خرید این کالا با تسهیلات دیجی‌پی</span>
-                    </div>
-                    <Icon icon={arrow_left} />
-                </div>
-                <div className="text-gray-400 leading-loose flex gap-1">
-                    <div className="flex flex-col items-center px-1">
-                        <div className="border w-[1px] bg-gray-500 flex-1"></div>
-                        <div className="bg-blue-800 w-[6px] h-[6px] rounded-sm"></div>
-                        <div className="border w-[1px] bg-gray-500 flex-1"></div>
-                    </div>
-                    <h3 className="text-[11px]">فقط با ماهی ۴,۷۰۳,۸۰۰ تومان (۱۲ ماه)</h3>
-                </div>
-                <div className="text-gray-400 leading-loose flex gap-1">
-                    <div className="flex flex-col items-center px-1">
-                        <div className="border w-[1px] bg-gray-500 flex-1"></div>
-                        <div className="bg-blue-800 w-[6px] h-[6px] rounded-sm"></div>
-                        <div className="border w-[1px] bg-gray-500 flex-1"></div>
-                    </div>
-                    <h3 className="text-[11px]">فقط با ماهی ۴,۷۰۳,۸۰۰ تومان (۱۲ ماه)</h3>
-                </div>
-            </div>
-          </div> */}
+          <LeftGrayBox data={product}/>
         </div>
       </div>
     </div>

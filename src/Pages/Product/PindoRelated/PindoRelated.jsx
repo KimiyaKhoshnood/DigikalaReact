@@ -6,31 +6,18 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { FreeMode, Navigation } from "swiper/modules";
 import PriceWithToman from "../../../Components/PriceWithToman/PriceWithToman";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { fetchProduct } from "../../../Redux/Posts/ProductReducer";
 
 const PindoRelated = () => {
-  const PindoRelatedP = [
-    {
-      img: "https://dkstatics-public.digikala.com/digikala-c2c-advertisements/9f1d5148d1fb3ff48c1bb771d89843d4e23e04ed_1726757720.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      title:
-        "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
-      price: "۳۶,۳۹۷,۰۰۰",
-      id: 1,
-    },
-    {
-      img: "https://dkstatics-public.digikala.com/digikala-c2c-advertisements/e8776e4df32faded26845b770b42ce4781f6dab6_1727622094.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      title:
-        "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
-      price: "۳۷,۹۸۵,۰۰۰",
-      id: 2,
-    },
-    {
-      img: "https://dkstatics-public.digikala.com/digikala-c2c-advertisements/9f1d5148d1fb3ff48c1bb771d89843d4e23e04ed_1726757720.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-      title:
-        "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
-      price: "۳۸,۰۰۰,۰۰۰",
-      id: 3,
-    },
-  ];
+  const { product, loading, error } = useSelector((state) => state.product);
+  const dispatch = useDispatch();
+    useEffect(() => {
+      setTimeout(() => {
+        dispatch(fetchProduct());
+    }, 1000);
+  }, []);
   return (
     <div className="w-full max-w-[1676px] p-4">
       <div className="bg-gray-100 bg-[url(https://www.digikala.com/_next/static/media/PindoTouchPointBackground.f54ee21d.svg)] bg-no-repeat bg-right w-full rounded-lg p-4 flex lg:flex-row flex-col justify-between">
@@ -60,7 +47,7 @@ const PindoRelated = () => {
             modules={[FreeMode, Navigation]}
             className="mySwiperflex"
           >
-            {PindoRelatedP.map((elem) => {
+            {product?.PindoRelatedP.map((elem) => {
               return (
                 <SwiperSlide
                   className="!w-fit h-full"

@@ -1,3 +1,4 @@
+import { useDispatch, useSelector } from "react-redux";
 import Footer from "../../../Components/Footer/Footer";
 import Header from "../../../Components/Header/Header";
 import OnlineSupport from "../../../Components/OnlineSupport/OnlineSupport";
@@ -12,12 +13,22 @@ import ProductSwiper from "../ProductSwiper/ProductSwiper";
 import RelatedTags from "../RelatedTags/RelatedTags";
 import RelatedVideos from "../RelatedVideos/RelatedVideos";
 import SimilarProducts from "../SimilarProducts/SimilarProducts";
+import { useEffect } from "react";
+import { fetchProduct } from "../../../Redux/Posts/ProductReducer";
+import Loading from "../Loading/Loading";
 
 const Product = () => {
+  const { product, loading, error } = useSelector((state) => state.product);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(fetchProduct());
+    }, 1000);
+  }, []);
   return (
     <div>
       <Header />
-      <div className="flex flex-col items-center">
+      {product ? <div className="flex flex-col items-center">
         <Address />
         <MainProductInfo />
         <DigikalaAdvantages />
@@ -29,7 +40,7 @@ const Product = () => {
         <ProductSwiper />
         <DetailsSection/>
         <BoughtTogether/>
-      </div>
+      </div>: <Loading/>}
       <Footer />
     </div>
   );

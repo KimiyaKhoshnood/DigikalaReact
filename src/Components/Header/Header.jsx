@@ -14,7 +14,7 @@ import { basket } from "react-icons-kit/ikons/basket";
 import { tags } from "react-icons-kit/ikons/tags";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPost } from "../../Redux/Posts/PostReducer";
+import { fetchHeader } from "../../Redux/Posts/HeaderReducer";
 
 const Header = () => {
   let NavbarItemsP = {
@@ -78,13 +78,14 @@ const Header = () => {
     },
   };
 
-  const { home, loading, error } = useSelector((state) => state.home);
+  const { header, loading, error } = useSelector((state) => state.header);
   const dispatch = useDispatch();
   useEffect(() => {
     setTimeout(() => {
-      dispatch(fetchPost());
+      dispatch(fetchHeader());
     }, 1000);
   }, []);
+  
 
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -175,14 +176,14 @@ const Header = () => {
           />
         </div>
       </div>
-      {home?<nav className="h-[40px] lg:flex hidden justify-between px-2">
+      {header?<nav className="h-[40px] lg:flex hidden justify-between px-2">
         <div className="flex gap-2">
-          <div className="border-b-2 border-b-transparent hover:border-b-red-500 transition-all duration-300 ease-linear origin-right">
+          <div id="submenu" className="border-b-2 border-b-transparent hover:border-b-red-500 transition-all duration-300 ease-linear origin-right">
             <NavbarItems
               icon={NavbarItemsP?.productSorting.icon}
-              text={home?.NavbarItemsP.productSorting.text}
+              text={header?.productSorting.text}
               size={"text-md"}
-              color={home?.NavbarItemsP.productSorting.color}
+              color={header?.productSorting.color}
             />
           </div>
           <div className="text-gray-300 mt-2">|</div>
@@ -207,7 +208,7 @@ const Header = () => {
           </div>
           <div className="text-gray-300 mt-2">|</div>
           <div className="flex">
-            {home?.NavbarItemsP.digikalaQuestionsNavbar.map((elem, index) => {
+            {header?.digikalaQuestionsNavbar.map((elem, index) => {
               return (
                 <div
                   key={index}
@@ -227,7 +228,7 @@ const Header = () => {
         <div>
           <NavbarItems
             icon={NavbarItemsP?.locationNavbar.icon}
-            text={home?.NavbarItemsP.locationNavbar.text}
+            text={header?.locationNavbar.text}
             size={"text-xs"}
             color={"text-gray-800"}
           />

@@ -1,8 +1,10 @@
 import Icon from 'react-icons-kit'
 import EachSeller from './EachSeller';
 import BlueLinkWithLeftArrow from '../../../Components/BlueLinkWithLeftArrow/BlueLinkWithLeftArrow';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import TopicWithRedLine from '../TopicWithRedLine/TopicWithRedLine';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchProduct } from '../../../Redux/Posts/ProductReducer';
 
 const ProductSellers = () => {
   const ProductSellersP = [
@@ -69,6 +71,14 @@ const ProductSellers = () => {
     }
   ]
 
+  const { product, loading, error } = useSelector((state) => state.product);
+  const dispatch = useDispatch();
+    useEffect(() => {
+      setTimeout(() => {
+        dispatch(fetchProduct());
+    }, 1000);
+  }, []);
+
   const [readMore, setReadMore] = useState(false);
   const [readMoreBtn, setReadMoreBtn] = useState("مشاهده بیشتر");
 
@@ -84,7 +94,7 @@ const ProductSellers = () => {
             <TopicWithRedLine title={"فروشندگان این کالا"}/>
           </div>
           <div>
-            {ProductSellersP.map((elem, index)=>{
+            {product?.ProductSellers.map((elem, index)=>{
                 return (index<4 || readMore) && <EachSeller data={elem}/>
             })}
           </div>

@@ -8,7 +8,7 @@ import { u23F0 } from 'react-icons-kit/noto_emoji_regular/u23F0'
 import { arrow_left } from 'react-icons-kit/ikons/arrow_left'
 import {ic_announcement_outline} from 'react-icons-kit/md/ic_announcement_outline'
 
-const LeftGrayBox = () => {
+const LeftGrayBox = ({data}) => {
   return (
     <div className="w-full lg:max-w-[330px] flex flex-col gap-2">
             <div className="lg:bg-gray-100 min-w-[290px] lg:border border-gray-300 rounded-xl p-4 flex flex-col gap-3">
@@ -23,32 +23,32 @@ const LeftGrayBox = () => {
                   <Icon icon={shop} size={25} />
                 </div>
                 <div className="leading-loose">
-                  <p className='lg:text-md text-sm'>هشتگ کالا رز همراه</p>
+                  <p className='lg:text-md text-sm'>{data?.ProductSellers[0].title}</p>
                   <p className="text-xs flex gap-1 text-gray-600 py-2">
-                    <p className="text-green-600"> {"۱۰۰"}% </p>
+                    <p className="text-green-600"> {data?.ProductSellers[0].satisfaction}% </p>
                     رضایت از کالا | عملکرد
-                    <p className="text-green-600">{"عالی"}</p>
+                    <p className="text-green-600">{data?.ProductSellers[0].performance}</p>
                   </p>
                 </div>
               </div>
               <hr className='lg:block hidden' />
               <div className="lg:flex hidden items-center justify-between">
-                <div className="flex justify-center items-center text-[11px] w-[18px] h-[18px] border border-gray-600 rounded-full">
+                <div className="flex justify-center items-center text-[11px] w-[16px] h-[16px] pt-[2px] border border-gray-600 rounded-full">
                   i
                 </div>
-                <PriceWithToman price={"۴۵,۸۹۹,۰۰۰"} textSize={"text-lg font-bold"} />
+                <PriceWithToman price={data?.ProductSellers[0].price} textSize={"text-lg font-bold"} />
               </div>
               <span className="lg:block hidden text-xs text-sky-700">{"۱۰+ هزار بازدید در ۲۴ ساعت اخیر"}</span>
               <button className="lg:block hidden bg-rose-500 text-white w-full py-3 rounded-lg text-xs">افزودن به سبد</button>
               <div className="flex items-center gap-2 text-gray-800">
                 <Icon icon={ic_verified_user_outline} size={22} />
-                <p className="text-xs pt-1">گارانتی ۱۸ ماهه رز همراه فروهر</p>
+                <p className="text-xs pt-1">{data?.ProductSellers[0].guarantee}</p>
               </div>
               <hr />
               <div className="text-gray-500 text-xs flex justify-between">
                 <div>
                     <p><Icon className="text-rose-600" icon={u1F69A} size={20}/>&nbsp;ارسال دیجی‌کالا</p>
-                    <p><Icon className="text-blue-700" icon={u23F0} size={20}/>&nbsp;ارسال امروز (فعلا در شهر تهران و کرج)</p>
+                    {data?.ProductSellers[0].plusService && <p><Icon className="text-blue-700" icon={u23F0} size={20}/>&nbsp;ارسال امروز (فعلا در شهر تهران و کرج)</p>}
                 </div>
                 <Icon icon={arrow_left}/>
               </div>
@@ -82,7 +82,6 @@ const LeftGrayBox = () => {
                 </div>
                 <Icon icon={arrow_left} />
             </div>
-            {/* <div className='lg:hidden block w-full h-1 bg-gray-100'></div> */}
             <div className="lg:hidden flex flex-col gap-2 bg-gray-100 p-4">
               <div className="bg-white lg:hidden flex rounded-lg items-center justify-between px-4">
                 <span className="text-sm">ارسال رایگان برای این کالا</span>
