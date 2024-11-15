@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Icon from 'react-icons-kit'
 import { share } from 'react-icons-kit/entypo/share'
 import { ic_flip } from 'react-icons-kit/md/ic_flip'
@@ -8,6 +8,30 @@ import { ic_timeline } from 'react-icons-kit/md/ic_timeline'
 import { heartOutline } from 'react-icons-kit/typicons/heartOutline'
 
 const ProductPics = () => {
+  const imageZoomRef = useRef(null);
+  const [zoomStyles, setZoomStyles] = useState({
+    display: "none",
+    zoomX: "0%",
+    zoomY: "0%",
+  });
+  const handleMouseMove = (event) => {
+    const imageZoom = imageZoomRef.current;
+    if (imageZoom) {
+      const pointer = {
+        x: (event.nativeEvent.offsetX * 100) / imageZoom.offsetWidth,
+        y: (event.nativeEvent.offsetY * 100) / imageZoom.offsetHeight,
+      };
+      setZoomStyles({
+        display: "block",
+        zoomX: `${pointer.x}%`,
+        zoomY: `${pointer.y}%`,
+      });
+    }
+  };
+  const handleMouseOut = () => {
+    setZoomStyles({ display: "none", zoomX: "0%", zoomY: "0%" });
+  };
+
   return (
     <div className="flex flex-col">
         <div className="flex">
@@ -32,11 +56,21 @@ const ProductPics = () => {
             </div>
           </div>
           <div className='lg:w-fit w-full lg:block flex justify-center'>
-            <img
-              className="xl:w-[400px] w-[300px]"
-              src="https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              alt=""
-            />
+            <div
+              className='w-[400px] h-[400px] relative'
+              id="imageZoom"
+              ref={imageZoomRef}
+              style={{
+                "--url": "url('https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90')",
+                "--zoom-x": zoomStyles.zoomX,
+                "--zoom-y": zoomStyles.zoomY,
+                "--display": zoomStyles.display,
+              }}
+              onMouseMove={handleMouseMove}
+              onMouseOut={handleMouseOut}
+            >
+              <img className='w-full h-full object-cover objec' src="https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="" />
+            </div>
           </div>
         </div>
         <div className="lg:flex hidden gap-3 py-3">

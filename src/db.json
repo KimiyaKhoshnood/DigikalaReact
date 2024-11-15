@@ -1,48 +1,61 @@
 {
+  "user": [],
   "NavbarItemsP": {
-      "productSorting": { "text": "دسته‌بندی کالاها", "icon": "bars", "id": 1 },
-      "digikalaPagesNavbar": [
-        {
-          "text": "شگفت‌انگیزها",
-          "icon": "bars",
-          "id": 2
-        },
-        {
-          "text": "سوپرمارکت",
-          "icon": "basket",
-          "id": 3
-        },
-        {
-          "text": "کارت هدیه",
-          "icon": "percent",
-          "id": 4
-        },
-        {
-          "text": "پرفروش‌ترین‌ها",
-          "icon": "ic_local_fire_department",
-          "id": 5
-        },
-        {
-          "text": "تخفیف‌ها و پیشنهادها",
-          "icon": "tags",
-          "id": 6
-        }
-      ],
-      "digikalaQuestionsNavbar": [
-        { "text": "سوالی دارید؟", "id": 7 },
-        {
-          "text": "در دیجی‌کالا بفروشید!",
-          "id": 8
-        }
-      ],
-      "locationNavbar": {
-        "text": "لطفا شهر خود را انتخاب کنید",
-        "icon": "location"
+    "login": false,
+    "productSorting": {
+      "text": "دسته‌بندی کالاها",
+      "icon": "bars",
+      "id": 1
+    },
+    "digikalaPagesNavbar": [
+      {
+        "text": "شگفت‌انگیزها",
+        "icon": "bars",
+        "id": 2
+      },
+      {
+        "text": "سوپرمارکت",
+        "icon": "basket",
+        "id": 3
+      },
+      {
+        "text": "کارت هدیه",
+        "icon": "percent",
+        "id": 4
+      },
+      {
+        "text": "پرفروش‌ترین‌ها",
+        "icon": "ic_local_fire_department",
+        "id": 5
+      },
+      {
+        "text": "تخفیف‌ها و پیشنهادها",
+        "icon": "tags",
+        "id": 6
       }
+    ],
+    "digikalaQuestionsNavbar": [
+      {
+        "text": "سوالی دارید؟",
+        "id": 7
+      },
+      {
+        "text": "در دیجی‌کالا بفروشید!",
+        "id": 8
+      }
+    ],
+    "locationNavbar": {
+      "text": "لطفا شهر خود را انتخاب کنید",
+      "icon": "location"
+    }
   },
   "home": {
     "NavbarItemsP": {
-      "productSorting": { "text": "دسته‌بندی کالاها", "icon": "bars", "id": 1 },
+      "productSorting": {
+        "text": "دسته‌بندی کالاها",
+        "icon": "bars",
+        "id": 1
+      },
       "digikalaPagesNavbar": [
         {
           "text": "شگفت‌انگیزها",
@@ -71,7 +84,10 @@
         }
       ],
       "digikalaQuestionsNavbar": [
-        { "text": "سوالی دارید؟", "id": 7 },
+        {
+          "text": "سوالی دارید؟",
+          "id": 7
+        },
         {
           "text": "در دیجی‌کالا بفروشید!",
           "id": 8
@@ -317,13 +333,37 @@
         "off": "۵۹"
       }
     ],
-    "ASupermarketItemsP" : [
-      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":1},
-      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":2},
-      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":3},
-      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":4},
-      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۰", "id":5},
-      {"image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "off":"۵۵", "id":6}
+    "ASupermarketItemsP": [
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "off": "۵۰",
+        "id": 1
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "off": "۵۵",
+        "id": 2
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "off": "۵۰",
+        "id": 3
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "off": "۵۵",
+        "id": 4
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "off": "۵۰",
+        "id": 5
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/67805d0a0ed531faefba13946c0ed46357e8105c_1686638460.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "off": "۵۵",
+        "id": 6
+      }
     ],
     "FourPicItemsP": [
       {
@@ -343,100 +383,84 @@
         "id": 4
       }
     ],
-    "BuyBySortingItemsP" : [
+    "BuyBySortingItemsP": [
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "موبایل",
         "id": 1
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "کالای دیجیتال",
         "id": 2
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "کتاب، لوازم تحریر و هنر",
         "id": 3
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 4
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 5
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 6
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 7
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 8
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 9
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 10
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 11
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 12
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 13
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 14
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 15
       },
       {
-        "image":
-          "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-mega-menu/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1725653953.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
         "text": "خانه و آشپزخانه",
         "id": 16
       }
@@ -451,125 +475,289 @@
         "id": 2
       }
     ],
-    "YourIntrestP" : [
+    "YourIntrestP": [
       {
-          "title":"کیف و کاور گوشی",
-          "images":[{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/3e522d7132d2bb4c3f83321f5ce3070919e4cd88_1729977913.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-              "id":1
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/c0d977d18cf58b033a8346934cce80b1cfaab572_1722884842.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-              "id":2
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/8e7b84f5ba25a79673b2814e2aead169a54f97a6_1673976012.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-              "id":3
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/56ad80d1b7c45780578989b1aaea6413b9d7372c_1615464898.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-              "id":4
-          }],
-          "id":1
-      },{
-          "title":"گوشی موبایل",
-          "images":[{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/d4e2b4df5348faef2b375081baf57c378d6b865a_1721741880.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-              "id":1
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-              "id":2
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-              "id":3
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/82229ebb4fbe465f907c7078e0542139d865b2d8_1721401058.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-              "id":4
-          }],
-          "id":2
-      },{
-          "title":"هدفون، هدست و هندزفری",
-          "images":[{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "id":1
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "id":2
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "id":3
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "id":4
-          }],
-          "id":3
-      },{
-          "title":"ساعت هوشمند",
-          "images":[{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "id":1
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "id":2
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "id":3
-          },{
-              "img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "id":4
-          }],
-          "id":4
+        "title": "کیف و کاور گوشی",
+        "images": [
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/3e522d7132d2bb4c3f83321f5ce3070919e4cd88_1729977913.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+            "id": 1
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/c0d977d18cf58b033a8346934cce80b1cfaab572_1722884842.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+            "id": 2
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/8e7b84f5ba25a79673b2814e2aead169a54f97a6_1673976012.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+            "id": 3
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/56ad80d1b7c45780578989b1aaea6413b9d7372c_1615464898.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+            "id": 4
+          }
+        ],
+        "id": 1
+      },
+      {
+        "title": "گوشی موبایل",
+        "images": [
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/d4e2b4df5348faef2b375081baf57c378d6b865a_1721741880.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+            "id": 1
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+            "id": 2
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+            "id": 3
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/82229ebb4fbe465f907c7078e0542139d865b2d8_1721401058.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+            "id": 4
+          }
+        ],
+        "id": 2
+      },
+      {
+        "title": "هدفون، هدست و هندزفری",
+        "images": [
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "id": 1
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "id": 2
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "id": 3
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "id": 4
+          }
+        ],
+        "id": 3
+      },
+      {
+        "title": "ساعت هوشمند",
+        "images": [
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "id": 1
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "id": 2
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "id": 3
+          },
+          {
+            "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "id": 4
+          }
+        ],
+        "id": 4
       }
     ],
-    "DigiclubP" : [
+    "DigiclubP": [
       {
-          "title": "چرخ و بخت",
-          "icon": "ribbonB",
-          "image": "https://www.digikala.com/statics/img/png/digiclub/wheel-spinner.webp",
-          "id": 1
-      },{
-          "title": "ماموریت ها",
-          "icon": "map",
-          "image": "https://www.digikala.com/statics/img/png/digiclub/missions.webp",
-          "id": 2
-      },{
-          "title": "جایزه ها",
-          "icon": "ribbonB",
-          "image": "https://www.digikala.com/statics/img/png/digiclub/awards.webp",
-          "id": 3
+        "title": "چرخ و بخت",
+        "icon": "ribbonB",
+        "image": "https://www.digikala.com/statics/img/png/digiclub/wheel-spinner.webp",
+        "id": 1
+      },
+      {
+        "title": "ماموریت ها",
+        "icon": "map",
+        "image": "https://www.digikala.com/statics/img/png/digiclub/missions.webp",
+        "id": 2
+      },
+      {
+        "title": "جایزه ها",
+        "icon": "ribbonB",
+        "image": "https://www.digikala.com/statics/img/png/digiclub/awards.webp",
+        "id": 3
       }
     ],
-    "SellSelectionP" : [
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":1},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":2},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":3},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":4},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":5},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":6},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":7},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":8},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":9},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":10},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":11},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":12},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":13},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":14},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":15},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":16},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":17},
-      {"img":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "offPrice":"۷۰۹,۸۰۰", "price":"۷۸۰,۰۰۰", "offPercent":"۹", "id":18}
+    "SellSelectionP": [
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 1
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 2
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 3
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 4
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 5
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 6
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 7
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 8
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 9
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 10
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 11
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 12
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 13
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 14
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 15
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 16
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 17
+      },
+      {
+        "img": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "offPrice": "۷۰۹,۸۰۰",
+        "price": "۷۸۰,۰۰۰",
+        "offPercent": "۹",
+        "id": 18
+      }
     ],
-    "BlogP" : [
-      {"img":"https://www.digikala.com/mag/wp-content/uploads/2024/10/iphone16sale-1725627089.jpg", "text":"وزیر ارتباطات: مشکل رجیستری آیفون حل شد", "id":1},
-      {"img":"https://www.digikala.com/mag/wp-content/uploads/2024/10/iphone16sale-1725627089.jpg", "text":"وزیر ارتباطات: مشکل رجیستری آیفون حل شد", "id":2},
-      {"img":"https://www.digikala.com/mag/wp-content/uploads/2024/10/iphone16sale-1725627089.jpg", "text":"مدل ۲۰۲۴ نوکیا ۱۱۰ رونمایی شد؛ نوستالژیک با طراحی مدرن‌تر", "id":3},
-      {"img":"https://www.digikala.com/mag/wp-content/uploads/2024/10/iphone16sale-1725627089.jpg", "text":"وزیر ارتباطات: مشکل رجیستری آیفون حل شد", "id":4}
+    "BlogP": [
+      {
+        "img": "https://www.digikala.com/mag/wp-content/uploads/2024/10/iphone16sale-1725627089.jpg",
+        "text": "وزیر ارتباطات: مشکل رجیستری آیفون حل شد",
+        "id": 1
+      },
+      {
+        "img": "https://www.digikala.com/mag/wp-content/uploads/2024/10/iphone16sale-1725627089.jpg",
+        "text": "وزیر ارتباطات: مشکل رجیستری آیفون حل شد",
+        "id": 2
+      },
+      {
+        "img": "https://www.digikala.com/mag/wp-content/uploads/2024/10/iphone16sale-1725627089.jpg",
+        "text": "مدل ۲۰۲۴ نوکیا ۱۱۰ رونمایی شد؛ نوستالژیک با طراحی مدرن‌تر",
+        "id": 3
+      },
+      {
+        "img": "https://www.digikala.com/mag/wp-content/uploads/2024/10/iphone16sale-1725627089.jpg",
+        "text": "وزیر ارتباطات: مشکل رجیستری آیفون حل شد",
+        "id": 4
+      }
     ]
   },
-  "footer" : {
+  "footer": {
     "contactUs": [
-      { "text": "تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱", "id": 1 },
-      { "text": "|", "id": 2 },
-      { "text": "۰۲۱-۹۱۰۰۰۱۰۰", "id": 3 },
-      { "text": "|", "id": 4 },
-      { "text": "۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم", "id": 5 }
+      {
+        "text": "تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱",
+        "id": 1
+      },
+      {
+        "text": "|",
+        "id": 2
+      },
+      {
+        "text": "۰۲۱-۹۱۰۰۰۱۰۰",
+        "id": 3
+      },
+      {
+        "text": "|",
+        "id": 4
+      },
+      {
+        "text": "۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم",
+        "id": 5
+      }
     ],
     "digikalaAdvantages": [
       {
@@ -597,38 +785,92 @@
       {
         "title": "با دیجی‌کالا",
         "lists": [
-          { "text": "اتاق خبر دیجی‌کالا", "id": 1 },
-          { "text": "فروش در دیجی‌کالا", "id": 2 },
-          { "text": "فرصت‌های شغلی", "id": 3 },
-          { "text": "گزارش تخلف در دیجی‌کالا", "id": 4 },
-          { "text": "تماس با دیجی‌کالا", "id": 5 },
-          { "text": "درباره دیجی‌کالا", "id": 6 }
+          {
+            "text": "اتاق خبر دیجی‌کالا",
+            "id": 1
+          },
+          {
+            "text": "فروش در دیجی‌کالا",
+            "id": 2
+          },
+          {
+            "text": "فرصت‌های شغلی",
+            "id": 3
+          },
+          {
+            "text": "گزارش تخلف در دیجی‌کالا",
+            "id": 4
+          },
+          {
+            "text": "تماس با دیجی‌کالا",
+            "id": 5
+          },
+          {
+            "text": "درباره دیجی‌کالا",
+            "id": 6
+          }
         ]
       },
       {
         "title": "خدمات مشتریان",
         "lists": [
-          { "text": "پاسخ به پرسش‌های متداول", "id": 1 },
-          { "text": "رویه‌های بازگرداندن کالا", "id": 2 },
-          { "text": "شرایط استفاده", "id": 3 },
-          { "text": "حریم خصوصی", "id": 4 },
-          { "text": "گزارش باگ", "id": 5 }
+          {
+            "text": "پاسخ به پرسش‌های متداول",
+            "id": 1
+          },
+          {
+            "text": "رویه‌های بازگرداندن کالا",
+            "id": 2
+          },
+          {
+            "text": "شرایط استفاده",
+            "id": 3
+          },
+          {
+            "text": "حریم خصوصی",
+            "id": 4
+          },
+          {
+            "text": "گزارش باگ",
+            "id": 5
+          }
         ]
       },
       {
         "title": "راهنمای خرید از دیجی‌کالا",
         "lists": [
-          { "text": "نحوه ثبت سفارش", "id": 1 },
-          { "text": "رویه ارسال سفارش", "id": 2 },
-          { "text": "شیوه‌های پرداخت", "id": 3 }
+          {
+            "text": "نحوه ثبت سفارش",
+            "id": 1
+          },
+          {
+            "text": "رویه ارسال سفارش",
+            "id": 2
+          },
+          {
+            "text": "شیوه‌های پرداخت",
+            "id": 3
+          }
         ]
       }
     ],
     "socialMedia": [
-      { "img": "", "id": 1 },
-      { "img": "", "id": 2 },
-      { "img": "", "id": 3 },
-      { "img": "", "id": 4 }
+      {
+        "img": "",
+        "id": 1
+      },
+      {
+        "img": "",
+        "id": 2
+      },
+      {
+        "img": "",
+        "id": 3
+      },
+      {
+        "img": "",
+        "id": 4
+      }
     ],
     "downloadApp": [
       {
@@ -643,7 +885,10 @@
         "img": "https://www.digikala.com/statics/img/svg/appStores/coffe-bazzar.svg",
         "id": 3
       },
-      { "img": "https://www.digikala.com/statics/img/svg/More.svg", "id": 4 }
+      {
+        "img": "https://www.digikala.com/statics/img/svg/More.svg",
+        "id": 4
+      }
     ],
     "info": [
       " اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمان ی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.",
@@ -673,9 +918,18 @@
       "و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی متفاوتی مثل انواع خوراکی، گلیم و گبه، ابزار و ... تلاش کرده تا بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در این بخش شما می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص به سفره هفت‌سین  و پذیرایی از مهمانان در روزهای نوروز، انواع آیینه و شمعدان و هر آن چیزی را که برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با قیمت مناسب و تنوع بسیار بالا انتخاب کنید. همچنین در صفحه برچسب ها، امکان مشاهده و خرید انواع محصولات با طرح های بومی وجود دارد.  دیجی‌کالا همچنین برای اینکه حال و هوای عید را به اعضای خود هدیه کند، تقویم ۱۴۰۱، انواع ایده عکس پروفایل عید نوروز، آهنگ‌های عید نوروز و موزیک‌های شاد بهاری، وسایل مربوط به خانه‌تکانیی و انواع لباس های عید  را برای شما فراهم کرده است تا بتوانید در کنار خرید خود، از این حال و هوای تازه نهایت لذت را ببرید."
     ],
     "readMoreBrands": [
-      { "img": "https://www.digikala.com/statics/img/png/rezi.webp", "id": 1 },
-      { "img": "https://www.digikala.com/statics/img/png/kasbokar.webp", "id": 2 },
-      { "img": "https://www.digikala.com/statics/img/png/rezi.webp", "id": 3 }
+      {
+        "img": "https://www.digikala.com/statics/img/png/rezi.webp",
+        "id": 1
+      },
+      {
+        "img": "https://www.digikala.com/statics/img/png/kasbokar.webp",
+        "id": 2
+      },
+      {
+        "img": "https://www.digikala.com/statics/img/png/rezi.webp",
+        "id": 3
+      }
     ],
     "digiBrands": [
       {
@@ -739,7 +993,7 @@
   "product": {
     "image": "https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
     "available": true,
-    "productName" : "موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
+    "productName": "موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
     "englishName": "Apple iPhone 13 CH Dual SIM 128GB And 4GB RAM Mobile Phone - Not Activate",
     "rates": {
       "starsPersian": "۴.۵",
@@ -749,90 +1003,139 @@
       "questions": "۲۸۸۶",
       "comments": "۸,۲۵۲"
     },
-    "insurance": {"insuranceName": "بیمه تجهیزات دیجیتال - بیمه سامان", "price": "۱,۷۵۱,۶۳۰", "offPrice": "۸۷۶,۳۶۰", "offPercent": "۵۰"},
+    "insurance": {
+      "insuranceName": "بیمه تجهیزات دیجیتال - بیمه سامان",
+      "price": "۱,۷۵۱,۶۳۰",
+      "offPrice": "۸۷۶,۳۶۰",
+      "offPercent": "۵۰"
+    },
     "colors": [
-      {"colorName": "black", "colorTag": "#000000", "colorPersian": "مشکی"},
-      {"colorName": "white", "colorTag": "#ffffff", "colorPersian": "سفید"},
-      {"colorName": "pink", "colorTag": "#F472B6", "colorPersian": "صورتی"}
+      {
+        "colorName": "black",
+        "colorTag": "bg-[#000000]",
+        "colorPersian": "مشکی"
+      },
+      {
+        "colorName": "white",
+        "colorTag": "bg-[#ffffff]",
+        "colorPersian": "سفید"
+      },
+      {
+        "colorName": "pink",
+        "colorTag": "bg-[#F472B6]",
+        "colorPersian": "صورتی"
+      }
     ],
-    "AddressP" : [
-      {"text": "دیجی‌کالا", "id": 1},
-      {"text": "موبایل", "id": 2},
-      {"text": "گوشی موبایل", "id": 3}
+    "AddressP": [
+      {
+        "text": "دیجی‌کالا",
+        "id": 1
+      },
+      {
+        "text": "موبایل",
+        "id": 2
+      },
+      {
+        "text": "گوشی موبایل",
+        "id": 3
+      }
     ],
-    "MainProductInfoP" : {
+    "MainProductInfoP": {
       "features": [
-          {"title": "فناوری صفحه‌ نمایش", "detail": "Super Retina XDR OLED", "id":1 },
-          {"title": "نسخه سیستم عامل", "detail": "iOS 15", "id":2 },
-          {"title": "رزولوشن دوربین اصلی", "detail": "12 مگاپیکسل", "id":3 },
-          {"title": "اندازه", "detail": "6.1", "id":4 }
+        {
+          "title": "فناوری صفحه‌ نمایش",
+          "detail": "Super Retina XDR OLED",
+          "id": 1
+        },
+        {
+          "title": "نسخه سیستم عامل",
+          "detail": "iOS 15",
+          "id": 2
+        },
+        {
+          "title": "رزولوشن دوربین اصلی",
+          "detail": "12 مگاپیکسل",
+          "id": 3
+        },
+        {
+          "title": "اندازه",
+          "detail": "6.1",
+          "id": 4
+        }
       ]
     },
     "ProductSellers": [
       {
-          "title": "هشتگ کالا رز همراه",
-          "selection": false,
-          "satisfaction": "۱۰۰",
-          "performance": "عالی",
-          "days": 0,
-          "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
-          "price": "۴۵,۸۹۹,۰۰۰",
-          "plusService": true,
-          "id": 1
-      },{
-          "title": "سی تلکام",
-          "selection": false,
-          "satisfaction": "۱۰۰",
-          "performance": "عالی",
-          "days": 0,
-          "guarantee": "گارانتی ۱۸ ماهه پیشتازان فناوری سیب طلایی (سی تلکام)",
-          "price": "۴۵,۹۲۰,۰۰۰",
-          "plusService": true,
-          "id": 2
-      },{
-          "title": "هشتگ کالا رز همراه",
-          "selection": false,
-          "satisfaction": "۱۰۰",
-          "performance": "عالی",
-          "days": 0,
-          "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
-          "price": "۴۵,۸۹۹,۰۰۰",
-          "plusService": true,
-          "id": 3
-      },{
-          "title": "هشتگ کالا رز همراه",
-          "selection": false,
-          "satisfaction": "۱۰۰",
-          "performance": "عالی",
-          "days": 0,
-          "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
-          "price": "۴۵,۸۹۹,۰۰۰",
-          "plusService": true,
-          "id": 4
-      },{
-          "title": "هشتگ کالا رز همراه",
-          "selection": false,
-          "satisfaction": "۱۰۰",
-          "performance": "عالی",
-          "days": 0,
-          "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
-          "price": "۴۵,۸۹۹,۰۰۰",
-          "plusService": true,
-          "id": 5
-      },{
-          "title": "هشتگ کالا رز همراه",
-          "selection": false,
-          "satisfaction": "۱۰۰",
-          "performance": "عالی",
-          "days": 0,
-          "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
-          "price": "۴۵,۸۹۹,۰۰۰",
-          "plusService": true,
-          "id": 6
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 1
+      },
+      {
+        "title": "سی تلکام",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه پیشتازان فناوری سیب طلایی (سی تلکام)",
+        "price": "۴۵,۹۲۰,۰۰۰",
+        "plusService": true,
+        "id": 2
+      },
+      {
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 3
+      },
+      {
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 4
+      },
+      {
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 5
+      },
+      {
+        "title": "هشتگ کالا رز همراه",
+        "selection": false,
+        "satisfaction": "۱۰۰",
+        "performance": "عالی",
+        "days": 0,
+        "guarantee": "گارانتی ۱۸ ماهه رز همراه فروهر",
+        "price": "۴۵,۸۹۹,۰۰۰",
+        "plusService": true,
+        "id": 6
       }
     ],
-    "selected": {"color": "مشکی"},
-    "digikalaAdvantagesP" : [
+    "selected": {
+      "color": "مشکی"
+    },
+    "digikalaAdvantagesP": [
       {
         "img": "https://www.digikala.com/statics/img/svg/infosection/express-delivery.svg",
         "text": "اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس",
@@ -859,141 +1162,220 @@
         "id": 5
       }
     ],
-    "SimilarProductsP" : [
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"}
-    ],
-    "RelatedVideosP" : [
+    "SimilarProductsP": [
       {
-        "video":
-          "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      }
+    ],
+    "RelatedVideosP": [
+      {
+        "video": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
         "title": "راهنمای خرید گوشی تا ۶۰ میلیون",
-        "profilePic":
-          "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
+        "profilePic": "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
         "accountName": "Alirezaafshar",
         "id": 1
-      },{
-        "video":
-          "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
+      },
+      {
+        "video": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
         "title": "راهنمای خرید گوشی تا ۶۰ میلیون",
-        "profilePic":
-          "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
+        "profilePic": "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
         "accountName": "Alirezaafshar",
         "id": 2
-      },{
-        "video":
-          "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
+      },
+      {
+        "video": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
         "title": "راهنمای خرید گوشی تا ۶۰ میلیون",
-        "profilePic":
-          "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
+        "profilePic": "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
         "accountName": "Alirezaafshar",
         "id": 3
-      },{
-        "video":
-          "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
+      },
+      {
+        "video": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
         "title": "راهنمای خرید گوشی تا ۶۰ میلیون",
-        "profilePic":
-          "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
+        "profilePic": "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
         "accountName": "Alirezaafshar",
         "id": 4
-      },{
-        "video":
-          "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
+      },
+      {
+        "video": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
         "title": "راهنمای خرید گوشی تا ۶۰ میلیون",
-        "profilePic":
-          "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
+        "profilePic": "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
         "accountName": "Alirezaafshar",
         "id": 5
-      },{
-        "video":
-          "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
+      },
+      {
+        "video": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
         "title": "راهنمای خرید گوشی تا ۶۰ میلیون",
-        "profilePic":
-          "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
+        "profilePic": "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
         "accountName": "Alirezaafshar",
         "id": 6
-      },{
-        "video":
-          "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
+      },
+      {
+        "video": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
         "title": "راهنمای خرید گوشی تا ۶۰ میلیون",
-        "profilePic":
-          "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
+        "profilePic": "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
         "accountName": "Alirezaafshar",
         "id": 7
-      },{
-        "video":
-          "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
+      },
+      {
+        "video": "https://dkstatics-public.digikala.com/digikala-content-x-post-media/652755377cef10188d7ef633d7ac320d76c6d776_1726010876.jpg?x-oss-process=image/resize,w_600/quality,q_80",
         "title": "راهنمای خرید گوشی تا ۶۰ میلیون",
-        "profilePic":
-          "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
+        "profilePic": "https://dkstatics-public.digikala.com/digikala-content-x-profile/96e8f0e3a74785c92aa262a04383a71fd68714fc_1669144745.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150/quality,q_80",
         "accountName": "Alirezaafshar",
         "id": 8
       }
     ],
-    "RelatedTagsP" : [
+    "RelatedTagsP": [
       {
-          "text": "آیفون 13",
-          "id": 1
+        "text": "آیفون 13",
+        "id": 1
       }
     ],
-    "PindoRelatedP" : [
+    "PindoRelatedP": [
       {
         "img": "https://dkstatics-public.digikala.com/digikala-c2c-advertisements/9f1d5148d1fb3ff48c1bb771d89843d4e23e04ed_1726757720.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-        "title":
-          "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
+        "title": "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
         "price": "۳۶,۳۹۷,۰۰۰",
         "id": 1
       },
       {
         "img": "https://dkstatics-public.digikala.com/digikala-c2c-advertisements/e8776e4df32faded26845b770b42ce4781f6dab6_1727622094.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-        "title":
-          "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
+        "title": "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
         "price": "۳۷,۹۸۵,۰۰۰",
         "id": 2
       },
       {
         "img": "https://dkstatics-public.digikala.com/digikala-c2c-advertisements/9f1d5148d1fb3ff48c1bb771d89843d4e23e04ed_1726757720.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
-        "title":
-          "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
+        "title": "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
         "price": "۳۸,۰۰۰,۰۰۰",
         "id": 3
       }
     ],
     "ProductSwiperP": [
       {
-          "imgLg": "https://dkstatics-public.digikala.com/digikala-admin-landing/13a8ecabdaa3471150c78e711016cb9f89d2910d_1728114825.jpg",
-          "imgSm": "https://dkstatics-public.digikala.com/digikala-admin-landing/2bac49f3c75ba72742e58177c0615937f454cc99_1728739916.jpg",
-          "id": 1
-      },{
-          "imgLg": "https://dkstatics-public.digikala.com/digikala-admin-landing/8a3644e9d31784bdec123c96aa6a7285d44f191f_1728739891.jpg",
-          "imgSm": "https://dkstatics-public.digikala.com/digikala-admin-landing/ae7d07f5bfdba248c996ad1a090d07f683d1aab8_1728114858.jpg",
-          "id": 2
+        "imgLg": "https://dkstatics-public.digikala.com/digikala-admin-landing/13a8ecabdaa3471150c78e711016cb9f89d2910d_1728114825.jpg",
+        "imgSm": "https://dkstatics-public.digikala.com/digikala-admin-landing/2bac49f3c75ba72742e58177c0615937f454cc99_1728739916.jpg",
+        "id": 1
+      },
+      {
+        "imgLg": "https://dkstatics-public.digikala.com/digikala-admin-landing/8a3644e9d31784bdec123c96aa6a7285d44f191f_1728739891.jpg",
+        "imgSm": "https://dkstatics-public.digikala.com/digikala-admin-landing/ae7d07f5bfdba248c996ad1a090d07f683d1aab8_1728114858.jpg",
+        "id": 2
       }
     ],
     "DetailsSectionP": {
-      "introduction":
-        "گوشی موبایل iPhone 13 CH پرچم‌دار جدید شرکت اپل است که با چند ویژگی جدید و دوربین دوگانه روانه بازار شده است. نمایشگر آیفون 13 به پنل Super Retina مجهز ‌شده است تا تصاویر بسیار مطلوبی را به کاربر عرضه کند. این نمایشگر رزولوشن بسیار بالایی دارد؛ به‌طوری‌که در اندازه­‌ی 6.1 اینچی‌اش، حدود 460 پیکسل را در هر اینچ جا داده است. امکان شارژ بی‌‌سیم باتری در این گوشی وجود دارد. تشخیص چهره با استفاده از دوربین جلو دیگر ویژگی است که در آیفون جدید اپل به کار گرفته شده است. از نظر سخت‌‌افزاری این گوشی از تراشه­‌ی جدید A15 بهره می‌برد که دارای 15 میلیارد ترانزیستور است که دارای کنترل گرمای مطلوبی بوده که تا بتواند علاوه بر کارهای معمول، از قابلیت‌های جدید واقعیت مجازی که اپل این روزها روی آن تمرکز خاصی دارد، پشتیبانی کند. به گفته خود شرکت اپل این گوشی دارای سرعتی 50 برابر نسخه 12 خود است. پردازنده دارای ماژولار جدیدی است که مصرف باتری را بسیار پایین‌تر آورده است و شما دارای حفظ باتری بالاتری هستید. اپل در این سری از گوشی‌های iPhone خود پردازنده گرافیکی‌ای را قرار داده که از سری 12 گوشی‌های خود 30 درصد سریع‌تر است و این نویدبخش آن است که شما می‌توانید بازی‌هایی را با گرافیک و MAP سنگین تر و بزرگ‌تر اجرا کنید. یکی از ویژگی‌هایی که در iPhone 13 شاهد هستیم سیستم فیلمبرداری ProRes سینمایی آن است که می تواند انقلابی در فیلمبرداری گوشی‌های موبایل به‌راه انداخته باشد. گوشی‌های نات اکتیو با قرار گرفتن سیم‌کارت‌های داخلی اکتیو می‌شوند و برخلاف مدل اکتیو پلمپ کالا باز نشده است. گوشی‌های اکتیو برند اپل هم به این شکل هستند که به دلیل محدودیت‌های برخی از محصولات اپل برای کشور ایران، در کشور‌های همسایه به‌صورت رسمی با یک بار قرار گرفتن سیم‌کارت، اکتیو شده و پلمپ می‌شوند و باید بدانید که این پروسه هیچ مشکلی در راستای گارانتی کالا به‌همراه ندارد. پارت‌نامبر‌های اروپا و ژاپن و امارات تک سیم‌کارت هستند و پارت‌نامبر‌های مربوط به امارات هم از فیس تایم پشتیبانی نمی‌کنند. پارت‌نامبر JA (ژاپن) هم حتی در حالت سایلنت صدای شاتر عکس قطع نمی‌شود.",
+      "introduction": "گوشی موبایل iPhone 13 CH پرچم‌دار جدید شرکت اپل است که با چند ویژگی جدید و دوربین دوگانه روانه بازار شده است. نمایشگر آیفون 13 به پنل Super Retina مجهز ‌شده است تا تصاویر بسیار مطلوبی را به کاربر عرضه کند. این نمایشگر رزولوشن بسیار بالایی دارد؛ به‌طوری‌که در اندازه­‌ی 6.1 اینچی‌اش، حدود 460 پیکسل را در هر اینچ جا داده است. امکان شارژ بی‌‌سیم باتری در این گوشی وجود دارد. تشخیص چهره با استفاده از دوربین جلو دیگر ویژگی است که در آیفون جدید اپل به کار گرفته شده است. از نظر سخت‌‌افزاری این گوشی از تراشه­‌ی جدید A15 بهره می‌برد که دارای 15 میلیارد ترانزیستور است که دارای کنترل گرمای مطلوبی بوده که تا بتواند علاوه بر کارهای معمول، از قابلیت‌های جدید واقعیت مجازی که اپل این روزها روی آن تمرکز خاصی دارد، پشتیبانی کند. به گفته خود شرکت اپل این گوشی دارای سرعتی 50 برابر نسخه 12 خود است. پردازنده دارای ماژولار جدیدی است که مصرف باتری را بسیار پایین‌تر آورده است و شما دارای حفظ باتری بالاتری هستید. اپل در این سری از گوشی‌های iPhone خود پردازنده گرافیکی‌ای را قرار داده که از سری 12 گوشی‌های خود 30 درصد سریع‌تر است و این نویدبخش آن است که شما می‌توانید بازی‌هایی را با گرافیک و MAP سنگین تر و بزرگ‌تر اجرا کنید. یکی از ویژگی‌هایی که در iPhone 13 شاهد هستیم سیستم فیلمبرداری ProRes سینمایی آن است که می تواند انقلابی در فیلمبرداری گوشی‌های موبایل به‌راه انداخته باشد. گوشی‌های نات اکتیو با قرار گرفتن سیم‌کارت‌های داخلی اکتیو می‌شوند و برخلاف مدل اکتیو پلمپ کالا باز نشده است. گوشی‌های اکتیو برند اپل هم به این شکل هستند که به دلیل محدودیت‌های برخی از محصولات اپل برای کشور ایران، در کشور‌های همسایه به‌صورت رسمی با یک بار قرار گرفتن سیم‌کارت، اکتیو شده و پلمپ می‌شوند و باید بدانید که این پروسه هیچ مشکلی در راستای گارانتی کالا به‌همراه ندارد. پارت‌نامبر‌های اروپا و ژاپن و امارات تک سیم‌کارت هستند و پارت‌نامبر‌های مربوط به امارات هم از فیس تایم پشتیبانی نمی‌کنند. پارت‌نامبر JA (ژاپن) هم حتی در حالت سایلنت صدای شاتر عکس قطع نمی‌شود.",
       "professionalDetails": {
-        "introduction":
-          "گوشی‌های هوشمند خانواده آیفون 13 در قالب چهار گوشی آیفون 13 پرو مکس، آیفون 13 پرو، آیفون 13 و آیفون 13 مینی معرفی شدند. بدون شک دو مدل پرو و پرو مکس به عنوان پرچمداران این شرکت از مشخصات فنی قدرتمند‌تری بهره برده‌اند. اما در این میان آیفون 13 به همراه مدل مینی با قیمتی مقرون‌به‌صرفه‌تر روانه بازار شده‌اند تا امکان خرید برای کاربران بیشتری امکان‌پذیر باشد. در این مقاله خواهیم دید که آیفون 13 به نسبت نسل قبلی چه مشخصاتی با خود به‌همراه داشته و در بخش‌های مختلف چه عملکردی را از خودش به‌نمایش می‌گذارد. شاید با توجه به مشخصات تقریبا مشابه آیفون 13 و آیفون 12، این سوال برای شما به وجود آید که چرا آیفون 13 می‌تواند عملکرد بهتری داشته باشد. پس با ما همراه باشید تا به دلایل عملکرد بهتر و قدرتمند‌تر آیفون 13 به نسبت آیفون 12 پی ببرید.",
+        "introduction": "گوشی‌های هوشمند خانواده آیفون 13 در قالب چهار گوشی آیفون 13 پرو مکس، آیفون 13 پرو، آیفون 13 و آیفون 13 مینی معرفی شدند. بدون شک دو مدل پرو و پرو مکس به عنوان پرچمداران این شرکت از مشخصات فنی قدرتمند‌تری بهره برده‌اند. اما در این میان آیفون 13 به همراه مدل مینی با قیمتی مقرون‌به‌صرفه‌تر روانه بازار شده‌اند تا امکان خرید برای کاربران بیشتری امکان‌پذیر باشد. در این مقاله خواهیم دید که آیفون 13 به نسبت نسل قبلی چه مشخصاتی با خود به‌همراه داشته و در بخش‌های مختلف چه عملکردی را از خودش به‌نمایش می‌گذارد. شاید با توجه به مشخصات تقریبا مشابه آیفون 13 و آیفون 12، این سوال برای شما به وجود آید که چرا آیفون 13 می‌تواند عملکرد بهتری داشته باشد. پس با ما همراه باشید تا به دلایل عملکرد بهتر و قدرتمند‌تر آیفون 13 به نسبت آیفون 12 پی ببرید.",
         "img": "https://dkstatics-public.digikala.com/digikala-reviews/1ab22d57eaceec398123173e592835275e6d027e_1632043862.jpg?x-oss-process=image/quality,q_70"
       },
       "tableDetails": [
-        { "title": "نوع گوشی موبایل", "detail": "سیستم عامل iOS", "id": 1 },
-        { "title": "دسته ‌بندی", "detail": "پرچم‌دار", "id": 2 },
-        { "title": "مدل", "detail": "iPhone ۱۳ CH", "id": 3 },
-        { "title": "زمان معرفی", "detail": "۱۴ سپتامبر ۲۰۲۱", "id": 4 },
-        { "title": "ابعاد", "detail": "۱۴۶.۷x۷۱.۵x۷.۶۵ میلی‌متر", "id": 5 }
+        {
+          "title": "نوع گوشی موبایل",
+          "detail": "سیستم عامل iOS",
+          "id": 1
+        },
+        {
+          "title": "دسته ‌بندی",
+          "detail": "پرچم‌دار",
+          "id": 2
+        },
+        {
+          "title": "مدل",
+          "detail": "iPhone ۱۳ CH",
+          "id": 3
+        },
+        {
+          "title": "زمان معرفی",
+          "detail": "۱۴ سپتامبر ۲۰۲۱",
+          "id": 4
+        },
+        {
+          "title": "ابعاد",
+          "detail": "۱۴۶.۷x۷۱.۵x۷.۶۵ میلی‌متر",
+          "id": 5
+        }
       ],
       "comments": [
         {
@@ -1047,8 +1429,7 @@
       ],
       "questions": [
         {
-          "question":
-            "آقا الان که دیگه ۱۴ و ۱۵ ریجستر میشن بنظرتون هنوز همین ۱۳ ارزش خرید داره؟",
+          "question": "آقا الان که دیگه ۱۴ و ۱۵ ریجستر میشن بنظرتون هنوز همین ۱۳ ارزش خرید داره؟",
           "answer": null,
           "id": 1
         },
@@ -1087,19 +1468,91 @@
         }
       ]
     },
-    "BoughtTogetherP" : [
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"ساعت هوشمند ورنا مدل W49 ultra with 7 Bands", "oldPrice":"۱,۰۰۰,۰۰۰", "newPrice":"۷۵۸,۰۰۰", "off":"۲۴"},
-      {"image":"https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80", "title":"کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر", "oldPrice":"۶۸۰,۰۰۰", "newPrice":"۲۷۹,۰۰۰", "off":"۵۹"}
+    "BoughtTogetherP": [
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/49583a51f0f0e51843718c0a14bda58c683e1bdf_1718703853.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "ساعت هوشمند ورنا مدل W49 ultra with 7 Bands",
+        "oldPrice": "۱,۰۰۰,۰۰۰",
+        "newPrice": "۷۵۸,۰۰۰",
+        "off": "۲۴"
+      },
+      {
+        "image": "https://dkstatics-public.digikala.com/digikala-products/c157c00d7dd882089e1eb6959352e5cb2132ebe1_1646038481.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+        "title": "کرم مرطوب کننده و آبرسان آرت وینا مدل اکسترا پلاس حجم 75 میلی لیتر",
+        "oldPrice": "۶۸۰,۰۰۰",
+        "newPrice": "۲۷۹,۰۰۰",
+        "off": "۵۹"
+      }
     ]
   }
 }

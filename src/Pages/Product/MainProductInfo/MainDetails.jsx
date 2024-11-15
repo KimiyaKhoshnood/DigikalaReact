@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Icon from 'react-icons-kit'
 import { androidStar } from 'react-icons-kit/ionicons/androidStar'
 import OffPercent from '../../../Components/OffPercent/OffPercent'
@@ -6,8 +6,11 @@ import LineThroughPrice from '../../../Components/LineThroughPrice/LineThroughPr
 import PriceWithToman from '../../../Components/PriceWithToman/PriceWithToman'
 import BlueLinkWithLeftArrow from '../../../Components/BlueLinkWithLeftArrow/BlueLinkWithLeftArrow'
 import { arrow_left } from 'react-icons-kit/ikons/arrow_left'
+import {ic_done} from 'react-icons-kit/md/ic_done'
 
 const MainDetails = ({data}) => {
+    let temp = ["bg-[#F472B6]", "bg-[#000000]"]
+    const [checked, setchecked] = useState(0)
   return (
     <div className="lg:w-fit w-full flex flex-col gap-4 px-4">
             <div className="text-gray-400 flex items-center">
@@ -38,9 +41,13 @@ const MainDetails = ({data}) => {
             <span className="font-bold">{`رنگ: ${data?.selected.color}`}</span>
             <div className="flex gap-2">
                 {
-                    data?.colors.map((elem)=>{
-                        return <div className="border rounded-full w-fit p-1 flex gap-1 items-center text-[11px]">
-                            <div className={`bg-[${elem.colorTag}] lg:w-[30px] lg:h-[30px] w-[22px] h-[22px] rounded-full border`}></div>
+                    data?.colors.map((elem, i)=>{
+                        console.log(elem.colorTag);
+                        
+                        return <div onClick={()=>setchecked(i)} className={`border rounded-full w-fit p-1 flex gap-1 items-center text-[11px] ${checked==i && "border-2 border-blue-400"}`}>
+                            <div className={`${elem.colorTag} lg:w-[30px] lg:h-[30px] w-[22px] h-[22px] rounded-full border flex justify-center items-center`}>
+                                {checked==i && <Icon className={(elem.colorTag!="bg-[#000000]")?`text-black`:`text-white`} icon={ic_done}/>}
+                            </div>
                             <span className='lg:hidden block px-1'>{elem.colorName}</span>
                         </div>
                     })
