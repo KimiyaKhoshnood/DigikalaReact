@@ -30,7 +30,6 @@ const Highlights = () => {
     const updateWindowDimensions = () => {
       const newWidth = window.innerWidth;
       setWidth(newWidth);
-      console.log("updating width highlights");
     };
 
     window.addEventListener("resize", updateWindowDimensions);

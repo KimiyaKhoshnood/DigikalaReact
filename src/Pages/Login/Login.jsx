@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate();
-
   const {
     register,
     handleSubmit,
@@ -13,15 +12,14 @@ const Login = () => {
   } = useForm({ criteriaMode: "all" });
   const onSubmit = async (data) => {
     try {
-      console.log(data);
-      await axios.post("http://localhost:3004/user", data);
+      await axios.post(`http://localhost:3004/user`, data)
       navigate("/", { replace: true }); // <-- redirect
     } catch (error) {
       console.error("There was an error!", error);
     }
   }
 
-  return (
+  return (<>
     <div className="flex justify-center items-center h-[100vh]">
       <div className="w-[400px] border border-gray-200 rounded-md flex flex-col items-center p-8 text-xs gap-3">
         <img
@@ -67,6 +65,7 @@ const Login = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
