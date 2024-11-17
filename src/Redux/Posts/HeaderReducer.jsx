@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const fetchHeader = createAsyncThunk(`header/fetch`, async () => {
   try {
-    const res = await axios.get(`http://localhost:3004/NavbarItemsP`)
+    const res = await axios.get(`http://localhost:3004/header`)
     return res.data;
   } catch (error) {
     console.log(error.message);

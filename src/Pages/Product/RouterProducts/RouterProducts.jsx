@@ -5,7 +5,7 @@ const RouterProducts = () => {
   return (
     <Routes>
         <Route path="/" element={<Product/>}/>
-        {/* <Route path="/:id" element={}/> */}
+        {/* <Route path="/:title" element={<Product/>}/> */}
     </Routes>
   )
 }

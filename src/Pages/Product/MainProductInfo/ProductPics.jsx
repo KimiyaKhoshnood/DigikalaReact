@@ -66,8 +66,8 @@ const ProductPics = () => {
                 "--zoom-y": zoomStyles.zoomY,
                 "--display": zoomStyles.display,
               }}
-              onMouseDown={handleMouseMove}
-              onMouseUp={handleMouseOut}
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseOut}
             >
               <img className='w-full h-full object-cover objec' src="https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="" />
             </div>
