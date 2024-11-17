@@ -23,6 +23,8 @@ import "swiper/css/navigation";
 import { FreeMode, Navigation } from "swiper/modules";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../../../Redux/Posts/ProductReducer";
+import { arrow_left } from "react-icons-kit/ikons/arrow_left";
+import {ic_forum} from 'react-icons-kit/md/ic_forum'
 
 const DetailsSection = () => {
   // const DetailsSectionP = {
@@ -359,14 +361,14 @@ const DetailsSection = () => {
                     return <Reviews comment={elem} />;
                   })}
                 </div>
-                <div className="lg:hidden block w-[500px]">
+                <div className="lg:hidden block w-full">
                   <Swiper
                     slidesPerView={"auto"}
                     spaceBetween={10}
                     freeMode={true}
                     navigation={true}
                     modules={[FreeMode, Navigation]}
-                    className="mySwiper"
+                    className="mySwiper w-[90vw]"
                   >
                     {product?.DetailsSectionP.comments.map((elem) => {
                       return (
@@ -393,7 +395,7 @@ const DetailsSection = () => {
 
           <div className="h-1 bg-gray-100"></div>
 
-          <section className=" px-4" id="questions">
+          <section className="px-4 lg:block" id="questions">
             <div className="flex justify-between items-center">
               <div>
                 <TopicWithRedLine title={"پرسش‌ها"} />
@@ -485,37 +487,36 @@ const DetailsSection = () => {
                       );
                     })}
                   </div>
-                  <div className="lg:hidden block bg-yellow-200">
+                  <div className="lg:hidden block h-[230px]">
                     <Swiper
                       slidesPerView={"auto"}
                       spaceBetween={10}
                       freeMode={true}
                       navigation={true}
                       modules={[FreeMode, Navigation]}
-                      className="mySwiper w-[400px] bg-blue-200"
+                      className="mySwiper w-[90vw] h-full"
                     >
                       {product?.DetailsSectionP.questions.map((elem) => {
                         return (
                           <SwiperSlide
-                            className="!w-fit h-full py-4"
-                            id="redSwiper"
+                            className="!w-fit h-full py-1 lg:border flex flex-col "
                             key={elem.id}
                           >
-                            <div className="w-[270px] border-b-2 bg-purple-300">
-                              <div className="border-b py-1">
-                                <div className="flex items-center gap-4">
+                            <div className="w-[270px] lg:border-b-2 border rounded-lg flex flex-col justify-between h-full">
+                              <div className="border-b py-1 text-xs leading-relaxed w-full h-full">
+                                <div className="flex items-center lg:gap-4 gap-2 px-2">
                                   <Icon
                                     className="text-cyan-400"
                                     icon={ic_help_center_outline}
                                     size={25}
                                   />
-                                  <p className="text-[15px] py-5">
+                                  <p className="lg:text-[15px] text-sm py-5">
                                     {elem.question}
                                   </p>
                                 </div>
                                 {elem.answer ? (
                                   <>
-                                    <div className="flex gap-4">
+                                    <div className="flex gap-4 px-2">
                                       <span className="text-[11px] text-gray-500 py-3">
                                         پاسخ{" "}
                                       </span>
@@ -531,23 +532,8 @@ const DetailsSection = () => {
                                         </span>
                                       </div>
                                     </div>
-                                    <div className="flex justify-end items-center gap-2 text-gray-400">
-                                      <span className="text-xs pl-10">
-                                        آیا این پاسخ مفید بود؟
-                                      </span>
-                                      <span>{elem.answer.like}</span>
-                                      <Icon
-                                        className=""
-                                        icon={ic_thumb_up_outline}
-                                      />
-                                      <span>{elem.answer.dislike}</span>
-                                      <Icon icon={ic_thumb_down_outline} />
-                                    </div>
                                   </>
                                 ) : null}
-                              </div>
-                              <div className="text-xs p-6">
-                                <BlueLinkWithLeftArrow text={"ثبت پاسخ"} />
                               </div>
                             </div>
                           </SwiperSlide>
@@ -560,12 +546,17 @@ const DetailsSection = () => {
                       text={`${product?.rates.questions} پرسش دیگر`}
                       size={"text-xs"}
                     />
-                  </span>
-                  <div className="h-2 bg-gray-100"></div>
+                  </span>                 
                 </div>
               </div>
             </div>
+            <div className="flex justify-between text-xs py-4">
+              <span><Icon icon={ic_forum}/> پرسش و پاسخ</span>
+              <span><Icon icon={arrow_left}/></span>
+            </div>
           </section>
+          
+          <div className="h-2 bg-gray-100"></div>
         </div>
         {/* left */}
         <div className="p-5 xl:block hidden">

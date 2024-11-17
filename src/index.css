@@ -85,3 +85,5 @@ div.swiper-button-disabled{
     left: 0;
     top: 0;
   }
+
+#submenu:hover>div{display: flex;}

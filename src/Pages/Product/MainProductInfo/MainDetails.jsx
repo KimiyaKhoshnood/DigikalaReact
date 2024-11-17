@@ -12,6 +12,7 @@ const MainDetails = ({data}) => {
     let temp = ["bg-[#F472B6]", "bg-[#000000]"]
     const [checked, setchecked] = useState(0)
   return (
+    <>
     <div className="lg:w-fit w-full flex flex-col gap-4 px-4">
             <div className="text-gray-400 flex items-center">
               <span className="text-wrap text-xs flex-1">
@@ -131,7 +132,23 @@ const MainDetails = ({data}) => {
                     <h3 className="text-[11px]">فقط با ماهی ۴,۷۰۳,۸۰۰ تومان (۱۲ ماه)</h3>
                 </div>
             </div>
-          </div>
+    </div>
+
+    <div className='fixed bottom-0 z-50 bg-white w-full py-3 border-t lg:hidden flex flex-col gap-2'>
+        <span className="text-[11px] text-sky-700 px-2 block">{"۱۰+ هزار بازدید در ۲۴ ساعت اخیر"}</span>
+        <div className='flex justify-between px-2'>
+            <div><button className='bg-rose-500 text-xs text-white py-3 px-5 rounded-lg'>افزودن به سبد خرید</button></div>
+            <div className='flex gap-1'>
+                {/* <div className="flex justify-center items-center text-[11px] w-[14px] h-[14px] bg-gray-400 text-white rounded-full pt-[2px]">
+                    i
+                </div>
+                <LineThroughPrice oldPrice={data.ProductSellers[0].price}/>
+                <OffPercent off={data.ProductSellers[0].off}/> */}
+                <PriceWithToman price={data.ProductSellers[0].price}/>
+            </div>
+        </div>
+    </div>
+    </>
   )
 }
 

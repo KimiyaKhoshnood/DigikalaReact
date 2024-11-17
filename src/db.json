@@ -1,5 +1,10 @@
 {
-  "user": [],
+  "user": [
+    {
+      "id": "19eb",
+      "PhoneOrEmail": "slam@gmail.com"
+    }
+  ],
   "NavbarItemsP": {
     "login": false,
     "productSorting": {

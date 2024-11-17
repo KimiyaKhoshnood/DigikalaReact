@@ -6,6 +6,7 @@ import FooterListsBar from "./FooterListsBar";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchFooter } from "../../Redux/Posts/FooterReducer";
+import {instagram} from 'react-icons-kit/icomoon/instagram'
 
 const Footer = () => {
   const {footer, loading, error} = useSelector((state)=>state.footer)
@@ -93,10 +94,10 @@ const Footer = () => {
                   {footer?.socialMedia.map((elem) => {
                     return (
                       <a
-                        className="w-[40px] h-[40px] bg-slate-300 block"
+                        className="w-[40px] h-[40px] text-gray-300 block"
                         href=""
                       >
-                        <img src={elem.img} alt="" />
+                        <Icon icon={instagram} size={40}/>
                       </a>
                     );
                   })}
@@ -201,7 +202,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="lg:hidden block px-4 pb-10">
+        <div className="lg:hidden block px-4 pb-24">
           <a
             className="text-cyan-500 text-xs flex gap-2 justify-center text-center w-full py-2"
             href=""

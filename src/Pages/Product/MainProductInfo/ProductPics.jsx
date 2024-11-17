@@ -57,7 +57,7 @@ const ProductPics = () => {
           </div>
           <div className='lg:w-fit w-full lg:block flex justify-center'>
             <div
-              className='w-[400px] h-[400px] relative'
+              className='sm:w-[400px] sm:h-[350px] max-w-[350px] max-h-[400px] relative'
               id="imageZoom"
               ref={imageZoomRef}
               style={{
@@ -66,8 +66,8 @@ const ProductPics = () => {
                 "--zoom-y": zoomStyles.zoomY,
                 "--display": zoomStyles.display,
               }}
-              onMouseMove={handleMouseMove}
-              onMouseOut={handleMouseOut}
+              onMouseDown={handleMouseMove}
+              onMouseUp={handleMouseOut}
             >
               <img className='w-full h-full object-cover objec' src="https://dkstatics-public.digikala.com/digikala-products/8da0ac0e9c414ff6bc745cd6b032ef61e6d93cf1_1730113501.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90" alt="" />
             </div>

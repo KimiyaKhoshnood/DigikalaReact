@@ -54,7 +54,7 @@ const AmazingSuggestion = () => {
                     <span className="flex justify-center items-center text-sm w-[26px] h-[26px] bg-white rounded-md">00</span>
                 </div>
             </div>
-            <a className="text-xs text-white" href="">مشاهده همه<Icon icon={ic_keyboard_arrow_left}/></a>
+            <a className="text-xs text-white" href="">همه<Icon icon={ic_keyboard_arrow_left}/></a>
           </div>
           <div className="h-full px-1">
             <Swiper

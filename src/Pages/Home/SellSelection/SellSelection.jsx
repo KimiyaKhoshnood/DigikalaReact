@@ -15,7 +15,7 @@ const SellSelection = () => {
   
   return (
     <div className="flex justify-center p-4">
-        <div className="max-w-[1336px] w-full lg:border border-gray-300 rounded-xl p-4">
+        <div className="max-w-[1336px] w-full lg:border border-gray-300 rounded-xl lg:px-4 py-4">
             <div className="flex justify-center py-4">
                 <h3 className="text-xl">منتخب محصولات تخفیف و حراج</h3>
             </div>

@@ -21,7 +21,7 @@ const Login = () => {
 
   return (<>
     <div className="flex justify-center items-center h-[100vh]">
-      <div className="w-[400px] border border-gray-200 rounded-md flex flex-col items-center p-8 text-xs gap-3">
+      <div className="sm:w-[400px] w-full sm:border border-gray-200 rounded-md flex flex-col items-center p-8 text-xs gap-3">
         <img
           className="w-[100px] py-2"
           src="https://www.digikala.com/brand/full-vertical.svg"

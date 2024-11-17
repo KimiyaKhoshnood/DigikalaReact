@@ -6,7 +6,7 @@ const SellSelectionItems = ({eachProduct}) => {
   return (
     <div key={eachProduct.id} className="flex flex-col items-center p-3 ">
         <div className="py-2">
-            <img className="h-[150px]" src={eachProduct.img} alt="" />
+            <img className="lg:h-[150px] h-[130px]" src={eachProduct.img} alt="" />
         </div>
         <div className="flex justify-between items-center w-full">
             <OffPercent off={eachProduct.offPercent} />
